@@ -1,0 +1,202 @@
+William Ellis
+Digital Skills Trainer & IT Knowledge Co-ordinator
+Neilston
+williamjamesellis@outlook.com
+Professional Summary
+Passionate digital skills trainer and knowledge management specialist with 15+ years' experience
+delivering IT training, creating accessible documentation, and championing technology adoption across
+diverse organisations. Proven track record designing and delivering engaging training programmes for
+Microsoft 365, CMS platforms, and bespoke systems to both technical and non-technical audiences.
+Expert in creating user-friendly knowledge resources, supporting digital transformation, and building staff
+confidence through varied learning approaches. Experienced working with third-sector organisations to
+drive efficiency and extend programme reach through effective knowledge sharing and digital
+enablement.
+• Expert in designing and delivering face-to-face, virtual, and blended learning programmes for Microsoft
+365, CMS platforms , and bespoke organisational systems
+• Extensive experience creating user guides, FAQs, screen documentation, and knowledge articles
+accessible to all skill levels
+• Strong commitment to WCAG compliance and creating inclusive training materials for varied learning
+styles
+• Proven ability to champion new systems and technologies, identifying opportunities for efficiency gains
+• Excellent communication skills, working effectively across technical and non-technical teams, L&D, and
+senior leadership
+• Hands-on experience supporting service delivery and ticket resolution whilst capturing learning for
+knowledge resources
+• Strong track record delivering engaging live and virtual training sessions, adapting to audience needs
+Work Experience
+E-Learning Systems Development Manager & Digital Skills Trainer The Richmond Fellowship Scotland
+08/2013 - 11/2024
+Led comprehensive digital learning portfolio supporting 4,000+ staff across Scotland, managing
+organisational website, internal systems, and e-learning platforms using product management principles
+and user-centred design.
+Key Responsibilities:
+E-Learning Development::
+Developed and deployed engaging digital learning content ensuring accessibility compliance (WCAG
+standards) across all platforms
+Training Delivery::
+1 / 6
+Facilitated technology training for staff at all levels, adapting delivery style to different learning
+preferences and technical abilities
+Stakeholder Collaboration::
+Worked closely with HR, Finance, Operations and Communications departments to align training
+outcomes with business objectives
+Analytics & Improvement::
+Implemented analytics frameworks to monitor user engagement and drive data-informed
+improvements to learning materials
+Content Management: :
+Developed and maintained learning materials including quick reference guides, manuals and online
+resources ensuring content remained current and accessible
+IT Training & Knowledge Management Lanarkshire Association for Mental Health
+01/2010 - Present
+Provide end-to-end digital consultancy including technology training, system implementation and staff
+capability-building to modernise service delivery.
+Key Responsibilities:
+Overall:
+Designed and delivered digital skills training programmes for staff across mental health services
+Created comprehensive documentation enabling staff to independently manage digital systems
+Provided ongoing ad-hoc IT support and capability-building to increase digital confidence
+Collaborated with senior management to align digital initiatives with service delivery goals
+Scottish Recovery Indicator Project Lead Scottish Government / Penumbra
+09/2005 - 08/2013
+Designed, developed and delivered national web-based practice development tool in partnership with NHS
+Boards, Scottish Government and third-sector organisations used by every Health Board across Scotland.
+Key Responsibilities:
+Overall:
+operation
+strategy
+learning
+Managed product lifecycle for national-scale digital service from initial discovery through to live
+Coordinated with stakeholders across NHS Boards and Scottish Government to align product
+Organised national events and forums to share insights and best practices, fostering community of
+Delivered impactful keynote speeches and authored articles to raise awareness nationally
+03/2010 - Present
+Digital Consultant
+Various Organisations (Public, Private, Third Sector)
+2 / 6
+Provided end-to-end operational support and digital consultancy, particularly in health, mental health, and
+community development.
+Current Key Client – Lanarkshire Association for Mental Health (2010–Present):
+Other Notable Projects:
+National Museums Scotland (2024–Present): Supporting digital development for audience engagement
+Birchwood Highland (2010–2020): Training delivery and policy support for peer support and mental
+health services
+Key Responsibilities:
+Overall:
+Provide practical digital support and capability-building to modernise operations
+Deliver ongoing training and documentation for staff confidence in digital systems
+Support senior management in aligning digital initiatives with goals
+Run diagnostics and implement improvements to enhance efficiency
+Advise on digital tools for outreach, operations, and service delivery
+Digital Transformation Manager & IT Training Lead 01/2000 - 08/2005
+Ladbrokes
+Led digital transformation of Scottish retail operations, transitioning 200+ branches from paper-based to
+fully digital systems.
+Key Responsibilities:
+Overall:
+Delivered comprehensive face-to-face IT training across all Scottish branches for EPOS systems and
+digital betting platforms
+Created training materials and user guides accessible to staff with varied technical confidence levels
+Provided ongoing support and troubleshooting, building staff confidence in new technologies
+Identified usability issues and communicated improvements to technical teams
+Achieved smooth adoption across diverse workforce through patient, adaptable training approach
+Professional Qualification Equivalence
+Masters
+Over 25 years of leadership and project management experience in national and international contexts,
+combined with extensive professional development in management, leadership, and digital technology.
+My expertise includes strategic planning, policy influence, and large-scale digital transformation, gained
+through roles requiring advanced critical thinking, problem-solving, and stakeholder engagement.
+Projects
+3 / 6
+Job Application Management System 10/2025 - Present
+I've built this Job Management System for people that are unemployed to be able to track jobs that they
+are interested in or have applied for. They can use it for free and pay for it when they successfully find
+employment. People who use the tool when employed can pay for using it.
+https://simple-job-tracker.com/
+MCP Protocol for Social Care Providers 06/2025 - Present
+The Model Context Protocol (MCP) helps social care providers and small businesses unlock the full value
+of their data. By providing a structured approach to managing information, MCP supports better decision-
+making, streamlined operations, and improved service delivery.
+https://wellis321.github.io/mcp-protocol-website/
+Organisation Playbook 03/2025 - Present
+The Organisation Playbook is a guide I'm creating to structuring an organisation around people and their
+needs, rather than rigid systems. It aims to create intuitive, efficient workflows where staff do not require
+extensive training to navigate digital systems. Instead, information and processes are designed to be
+natural and accessible.
+https://wellis321.github.io/org-playbook/
+Policy Management System 02/2025 - Present
+I've created this resource to standardise organisational policy creation. Using this tool policies can have
+strict version control with access limited to role permissions reflecting the organisational requirements.
+Policies are easy to read and follow modern A11y principles and guidelines. They are easy to create, edit
+and manage and integrate fully with the rest of the organisational digital architecture.
+https://policy-app-khaki.vercel.app/
+Scottish Digital Age Verification System 01/2025 - Present
+The National Age Verification system provides a secure, privacy-focused way to verify age and identity
+using QR codes. This system supports various verification needs for businesses, citizens, and document
+verification.
+https://wellis321.github.io/national-age/
+CV Builder 11/2024 - Present
+I've created this CV builder as I wanted to take control of my own CV and offer the same product to other
+people. The difference in this CV Builder is that it dynamically generates your own, unique digital online
+CV that can be shared as a link instead of downloaded as a static PDF.
+https://cv-app-virid-pi.vercel.app/
+The Scotland Equality Group 01/1999 - Present
+A group I founded to highlight the negative impact on all of us as a result of Income Inequality It provided
+evidence on each of eleven different health and social problems: physical health, mental health, drug
+abuse, education, imprisonment, obesity, social mobility, trust and community life, violence, teenage
+births, and child well-being. For all eleven of these health and social problems, outcomes are very
+substantially worse in more unequal societies.
+4 / 6
+https://web.archive.org/web/20101231000146/http://www.scotlandequalitygroup.net/
+Skills
+Cloud Services
+Azure (Expert), Vercel (Intermediate), Heroku (Intermediate), Firebase (Intermediate)
+Database
+MySQL (Advanced), MongoDB (Advanced), Microsoft SQL Server (Advanced), TransactSQL (Advanced), Supabase
+(Advanced), PostgreSQL (Advanced)
+Design
+Accessibility (Expert), Web Design (Expert), UI/UX Design (Expert), Typography (Intermediate), Mobile Design
+(Advanced), Audio Editing (Advanced), Animation (Intermediate)
+Frameworks
+SCORM (Advanced), Node (Advanced), Sveltekit (Advanced), Vue.js (Advanced)
+Programming Languages
+PHP (Intermediate), Typescript (Advanced), javascript (Beginner)
+Project Management
+Kanban (Expert), Prince2 (Advanced), Agile (Expert), Risk Management (Advanced)
+Soft Skills
+Critical Thinking (Expert), Communication (Expert), Collaboration (Expert), Adaptability (Expert), Care Practice
+(Intermediate), program amanagement (Expert), Problem Solving (Expert), Leadership (Expert)
+Software
+Ariculate (Advanced), Adobe Creative Cloud (Advanced), Moodle (Expert), DevOps (Expert), Totara (Expert), Sentry
+(Advanced), Team Management (Expert), Articulate Storyline (Advanced), Camtasia (Advanced)
+Technical Skills
+Network Security (Advanced), System Administration (Advanced), Testing (Advanced), UI/UX Design (Expert), Web
+Development (Expert), Data Analysis (Advanced), DevOps (Advanced)
+Tools
+VSCode (Advanced), Postman (Intermediate), Microsoft Graph (Intermediate), Git (Intermediate), Docker
+(Intermediate), Power Automate (Intermediate)
+Education
+HMS Sultan 01/1989 - 03/1991
+Certifications
+Product Management Professional Certificate
+5 / 6
+Microsoft
+AZ-900 Microsoft Azure Fundamentals
+Linked In Learning
+IAF Certified Facilitator
+Kinharvie Institute
+Professional Memberships
+Scottish AI Alliance Member
+CCPS Digital Board Member
+Interests & Activities
+Chess
+I enjoy playing chess online and
+sometimes to International Master level.
+Cycling
+I cycle everywhere. It's quite common for
+me to cycle over 200 miles in a week and I'm quite
+happy cycling from Neilston to somewhere like
+Perth and back.
+Swimming
+I enjoy long distance and outdoor
+swimming. I regularly swim in the Clyde at
+distances over two miles.
