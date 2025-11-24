@@ -242,6 +242,10 @@ main {
     margin-top: 1rem;
 }
 
+.faq .cards-grid {
+    grid-template-columns: 1fr;
+}
+
 .card,
 .grid article {
     background: #f5f7ff;
