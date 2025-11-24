@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documentation Guide</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar">
+            <a class="logo" href="index.html">DofE Prep</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="organisation.html" class="nav-link">Organisation</a>
+                <a href="role.html" class="nav-link">Role</a>
+                <a href="questions.html" class="nav-link">Questions</a>
+                <a href="prep.html" class="nav-link">Prep</a>
+                <a href="documentation.html" class="nav-link active" aria-current="page">Documentation</a>
+            </div>
+        </nav>
+        <div class="hero">
+            <p class="eyebrow">Documentation Best Practices</p>
+            <h1>How to Compose Good Technical & General Documentation</h1>
+            <p class="lead">
+                Learn the principles, structure, and techniques for creating clear, accessible, and effective
+                documentation that empowers users and supports knowledge sharing.
+            </p>
+        </div>
+    </header>
+
+    <div class="content-wrapper">
+        <aside class="sidebar-nav">
+            <nav class="side-nav">
+                <strong class="side-nav-title">Contents</strong>
+                <a href="#principles" class="side-nav-link">Core Principles</a>
+                <a href="#structure" class="side-nav-link">Structure & Organization</a>
+                <a href="#writing-style" class="side-nav-link">Writing Style</a>
+                <a href="#technical-docs" class="side-nav-link">Technical Documentation</a>
+                <a href="#general-docs" class="side-nav-link">General Documentation</a>
+                <a href="#accessibility" class="side-nav-link">Accessibility</a>
+                <a href="#formatting" class="side-nav-link">Formatting & Visuals</a>
+                <a href="#review" class="side-nav-link">Review & Maintenance</a>
+                <a href="#tools" class="side-nav-link">Tools & Formats</a>
+            </nav>
+        </aside>
+
+        <main class="main-with-sidebar">
+            <section class="panel" id="principles">
+                <h2>Core Principles of Good Documentation</h2>
+                <p>
+                    Effective documentation serves as a bridge between complex information and users who need to
+                    understand and apply it. Whether you're creating technical guides, user manuals, or knowledge
+                    articles, these core principles apply.
+                </p>
+                <div class="list">
+                    <strong>Key principles:</strong>
+                    <ul>
+                        <li><strong>Clarity</strong> — Use simple, direct language. Avoid jargon unless necessary, and
+                            always define technical terms when first introduced.</li>
+                        <li><strong>Completeness</strong> — Provide all necessary information without assuming prior
+                            knowledge. Include context, prerequisites, and expected outcomes.</li>
+                        <li><strong>Consistency</strong> — Use consistent terminology, formatting, and structure
+                            throughout. This helps users build familiarity and find information quickly.</li>
+                        <li><strong>User-focused</strong> — Write from the user's perspective. Consider their goals,
+                            skill level, and what they need to accomplish.</li>
+                        <li><strong>Actionable</strong> — Provide clear, step-by-step instructions that users can follow
+                            to achieve their goals.</li>
+                        <li><strong>Searchable</strong> — Structure content with clear headings, keywords, and metadata
+                            so users can find what they need quickly.</li>
+                        <li><strong>Maintainable</strong> — Design documentation that's easy to update as systems and
+                            processes change.</li>
+                    </ul>
+                </div>
+                <p class="note">
+                    For the DofE role, I understand that documentation will support staff using systems like eDofE,
+                    Microsoft 365, and Dynamics. These principles ensure that documentation empowers staff to use these
+                    systems confidently and independently.
+                </p>
+            </section>
+
+            <section class="panel" id="structure">
+                <h2>Structure & Organization</h2>
+                <p>
+                    Well-organized documentation helps users navigate information efficiently and find what they need
+                    quickly. A clear structure also makes documentation easier to maintain and update.
+                </p>
+                <div class="list">
+                    <strong>Document structure best practices:</strong>
+                    <ul>
+                        <li><strong>Start with an overview</strong> — Begin with a brief summary of what the document
+                            covers, who it's for, and what they'll learn or accomplish.</li>
+                        <li><strong>Use a logical hierarchy</strong> — Organize content from general to specific, or
+                            follow a workflow (setup → usage → troubleshooting).</li>
+                        <li><strong>Create a table of contents</strong> — For longer documents, provide a clear TOC with
+                            links to sections.</li>
+                        <li><strong>Use descriptive headings</strong> — Headings should clearly indicate the content
+                            beneath them. Use consistent heading levels (H1, H2, H3).</li>
+                        <li><strong>Group related information</strong> — Keep related concepts together. Use sections and
+                            subsections to break up content logically.</li>
+                        <li><strong>Include navigation aids</strong> — Add "Next" and "Previous" links, breadcrumbs, or
+                            a sidebar navigation for longer documents.</li>
+                        <li><strong>End with next steps or references</strong> — Conclude with related resources, common
+                            next steps, or links to related documentation.</li>
+                    </ul>
+                </div>
+                <div class="list">
+                    <strong>Common documentation patterns:</strong>
+                    <ul>
+                        <li><strong>Tutorial</strong> — Step-by-step learning path (Introduction → Prerequisites →
+                            Steps → Summary)</li>
+                        <li><strong>How-to guide</strong> — Task-focused instructions (Goal → Requirements → Steps →
+                            Verification)</li>
+                        <li><strong>Reference</strong> — Quick lookup information (Overview → Parameters → Examples →
+                            Related)</li>
+                        <li><strong>Explanation</strong> — Conceptual understanding (What → Why → How → Examples)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="panel" id="writing-style">
+                <h2>Writing Style & Language</h2>
+                <p>
+                    The way you write documentation significantly impacts how easily users can understand and apply the
+                    information. Clear, concise writing makes documentation more accessible and effective.
+                </p>
+                <div class="list">
+                    <strong>Writing style guidelines:</strong>
+                    <ul>
+                        <li><strong>Use active voice</strong> — "Click the Save button" is clearer than "The Save
+                            button should be clicked."</li>
+                        <li><strong>Be concise</strong> — Remove unnecessary words. "Click Save" is better than "You
+                            should now click on the Save button."</li>
+                        <li><strong>Use imperative mood for instructions</strong> — "Enter your username" rather than
+                            "You enter your username" or "The username should be entered."</li>
+                        <li><strong>Write in second person</strong> — Address the reader directly: "You can..." or
+                            "Your account..."</li>
+                        <li><strong>Define acronyms and technical terms</strong> — Spell out acronyms on first use
+                            (e.g., "Learning Management System (LMS)"). Provide brief definitions for technical terms.
+                        </li>
+                        <li><strong>Avoid ambiguous words</strong> — Use specific terms. "Click" is clearer than
+                            "select" when referring to mouse actions.</li>
+                        <li><strong>Use consistent terminology</strong> — If you call it a "user account" in one place,
+                            don't switch to "profile" elsewhere without reason.</li>
+                        <li><strong>Break up long sentences</strong> — Aim for sentences under 20 words when possible.
+                            Use lists for multiple related points.</li>
+                    </ul>
+                </div>
+                <div class="list">
+                    <strong>Tone considerations:</strong>
+                    <ul>
+                        <li><strong>Professional but friendly</strong> — Be approachable without being overly casual.
+                        </li>
+                        <li><strong>Confident and helpful</strong> — Write as if you're guiding a colleague, not lecturing
+                            a student.</li>
+                        <li><strong>Inclusive</strong> — Use gender-neutral language and avoid assumptions about the
+                            user's background or experience.</li>
+                        <li><strong>Error-positive</strong> — Frame mistakes as learning opportunities. "If you see
+                            this error..." rather than "Don't make this mistake..."</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="panel" id="technical-docs">
+                <h2>Technical Documentation</h2>
+                <p>
+                    Technical documentation explains how systems, software, or processes work. It's used by developers,
+                    system administrators, support staff, and end users. Good technical documentation balances depth with
+                    accessibility.
+                </p>
+                <div class="list">
+                    <strong>Essential elements of technical documentation:</strong>
+                    <ul>
+                        <li><strong>Prerequisites and requirements</strong> — Clearly state what users need before
+                            starting (software versions, permissions, accounts, etc.).</li>
+                        <li><strong>Installation or setup instructions</strong> — Step-by-step setup with verification
+                            steps to confirm success.</li>
+                        <li><strong>Configuration details</strong> — Explain settings, parameters, and options with
+                            examples of common configurations.</li>
+                        <li><strong>Usage examples</strong> — Provide real-world examples showing how to use the system
+                            or feature.</li>
+                        <li><strong>API or command reference</strong> — For technical audiences, include complete
+                            reference information with parameters, return values, and examples.</li>
+                        <li><strong>Error handling and troubleshooting</strong> — Document common errors, their causes,
+                            and solutions.</li>
+                        <li><strong>Best practices and tips</strong> — Share recommended approaches and common pitfalls
+                            to avoid.</li>
+                    </ul>
+                </div>
+                <div class="list">
+                    <strong>Technical writing techniques:</strong>
+                    <ul>
+                        <li><strong>Use code blocks</strong> — Format code, commands, and file paths in monospace
+                            fonts with syntax highlighting when possible.</li>
+                        <li><strong>Include screenshots and diagrams</strong> — Visual aids help users understand
+                            interfaces, workflows, and system architecture.</li>
+                        <li><strong>Provide before/after examples</strong> — Show what the system looks like before and
+                            after an action.</li>
+                        <li><strong>Document edge cases</strong> — Explain what happens in unusual scenarios or with
+                            non-standard inputs.</li>
+                        <li><strong>Version your documentation</strong> — Clearly indicate which version of the system
+                            the documentation applies to.</li>
+                        <li><strong>Link to related documentation</strong> — Help users discover related guides,
+                            reference materials, and troubleshooting resources.</li>
+                    </ul>
+                </div>
+                <p class="note">
+                    For the DofE role, technical documentation might cover eDofE workflows, Microsoft 365 features, or
+                            Dynamics processes. I would ensure documentation includes clear step-by-step instructions,
+                            screenshots of key interfaces, and troubleshooting guidance for common issues staff might
+                            encounter.
+                </p>
+            </section>
+
+            <section class="panel" id="general-docs">
+                <h2>General Documentation</h2>
+                <p>
+                    General documentation covers policies, procedures, knowledge articles, and user guides. It's often
+                    read by non-technical audiences who need clear, practical information to complete tasks or understand
+                    processes.
+                </p>
+                <div class="list">
+                    <strong>Types of general documentation:</strong>
+                    <ul>
+                        <li><strong>Policy documents</strong> — Explain rules, guidelines, and organizational
+                            standards. Should be clear, unambiguous, and include rationale where helpful.</li>
+                        <li><strong>Procedure guides</strong> — Step-by-step instructions for completing specific tasks
+                            or workflows.</li>
+                        <li><strong>Knowledge articles</strong> — Answer common questions, explain concepts, or provide
+                            quick reference information.</li>
+                        <li><strong>User guides</strong> — Help end users accomplish goals using a system or process.
+                        </li>
+                        <li><strong>Training materials</strong> — Support learning and skill development with structured
+                            content, examples, and exercises.</li>
+                    </ul>
+                </div>
+                <div class="list">
+                    <strong>Best practices for general documentation:</strong>
+                    <ul>
+                        <li><strong>Start with the "why"</strong> — Help users understand the purpose and context before
+                            diving into details.</li>
+                        <li><strong>Use scenarios and examples</strong> — Show real-world applications of the
+                            information.</li>
+                        <li><strong>Include visual aids</strong> — Screenshots, diagrams, flowcharts, and infographics
+                            make information more digestible.</li>
+                        <li><strong>Provide quick reference</strong> — Include summary tables, checklists, or cheat
+                            sheets for users who need quick answers.</li>
+                        <li><strong>Anticipate questions</strong> — Address common questions and concerns proactively.
+                        </li>
+                        <li><strong>Use plain language</strong> — Avoid unnecessary technical jargon. When technical
+                            terms are needed, provide clear explanations.</li>
+                        <li><strong>Make it scannable</strong> — Use headings, bullet points, tables, and white space
+                            to help users quickly find relevant information.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="panel" id="accessibility">
+                <h2>Accessibility in Documentation</h2>
+                <p>
+                    Accessible documentation ensures that all users, regardless of abilities or assistive technologies,
+                    can understand and use the information. This aligns with WCAG (Web Content Accessibility Guidelines)
+                    principles and inclusive design.
+                </p>
+                <div class="list">
+                    <strong>Accessibility best practices:</strong>
+                    <ul>
+                        <li><strong>Use semantic HTML</strong> — Proper heading hierarchy (H1, H2, H3), lists, and
+                            structure help screen readers navigate content.</li>
+                        <li><strong>Provide alt text for images</strong> — Describe images in a way that conveys their
+                            purpose and information to users who can't see them.</li>
+                        <li><strong>Ensure color contrast</strong> — Text should have sufficient contrast against
+                            backgrounds (WCAG AA: 4.5:1 for normal text, 3:1 for large text).</li>
+                        <li><strong>Use descriptive link text</strong> — "Read the user guide" is better than "Click
+                            here."</li>
+                        <li><strong>Support keyboard navigation</strong> — Ensure all interactive elements are
+                            keyboard accessible.</li>
+                        <li><strong>Provide text alternatives</strong> — For video content, include transcripts or
+                            captions. For audio, provide transcripts.</li>
+                        <li><strong>Use clear, readable fonts</strong> — Choose fonts that are easy to read at various
+                            sizes. Avoid decorative fonts for body text.</li>
+                        <li><strong>Structure content logically</strong> — Use headings, lists, and paragraphs to
+                            create a clear information hierarchy.</li>
+                        <li><strong>Test with assistive technologies</strong> — Verify documentation works with screen
+                            readers, keyboard navigation, and other assistive tools.</li>
+                    </ul>
+                </div>
+                <p class="note">
+                    For the DofE role, I understand that creating accessible documentation is essential, especially given
+                            the role description mentions "accessibility tools to promote inclusivity." I would ensure
+                            all documentation follows WCAG guidelines and is usable by staff with diverse needs and
+                            abilities.
+                </p>
+            </section>
+
+            <section class="panel" id="formatting">
+                <h2>Formatting & Visual Elements</h2>
+                <p>
+                    Effective formatting and visual elements make documentation easier to scan, understand, and use.
+                    Consistent formatting also helps users build familiarity with your documentation style.
+                </p>
+                <div class="list">
+                    <strong>Formatting guidelines:</strong>
+                    <ul>
+                        <li><strong>Use whitespace effectively</strong> — Adequate spacing between sections, paragraphs,
+                            and elements improves readability.</li>
+                        <li><strong>Highlight important information</strong> — Use bold, italics, or callout boxes
+                            sparingly to draw attention to key points, warnings, or tips.</li>
+                        <li><strong>Create visual hierarchy</strong> — Use font sizes, weights, and colors to show
+                            relationships between information.</li>
+                        <li><strong>Use lists for multiple items</strong> — Bullet points for unordered items, numbered
+                            lists for sequential steps.</li>
+                        <li><strong>Include tables for structured data</strong> — Use tables for comparisons,
+                            specifications, or reference information.</li>
+                        <li><strong>Add code formatting</strong> — Use monospace fonts and syntax highlighting for code,
+                            commands, file paths, and technical terms.</li>
+                        <li><strong>Use consistent styling</strong> — Apply the same formatting rules throughout your
+                            documentation for headings, lists, code blocks, and callouts.</li>
+                    </ul>
+                </div>
+                <div class="list">
+                    <strong>Visual elements to consider:</strong>
+                    <ul>
+                        <li><strong>Screenshots</strong> — Show interfaces, dialogs, and results. Annotate screenshots
+                            to highlight important elements.</li>
+                        <li><strong>Diagrams and flowcharts</strong> — Visualize processes, workflows, and system
+                            architecture.</li>
+                        <li><strong>Icons and symbols</strong> — Use consistent icons to represent concepts (e.g.,
+                            warning icons, tip icons, information icons).</li>
+                        <li><strong>Videos and animations</strong> — For complex processes, video tutorials can be more
+                            effective than text alone. Always provide transcripts or captions.</li>
+                        <li><strong>Interactive elements</strong> — Expandable sections, tabs, or interactive examples
+                            can help manage complex information.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="panel" id="review">
+                <h2>Review & Maintenance</h2>
+                <p>
+                    Documentation is a living resource that needs regular review and updates to remain accurate and
+                    useful. Establishing review processes ensures documentation quality and relevance over time.
+                </p>
+                <div class="list">
+                    <strong>Review process best practices:</strong>
+                    <ul>
+                        <li><strong>Peer review</strong> — Have colleagues review documentation for accuracy, clarity,
+                            and completeness.</li>
+                        <li><strong>User testing</strong> — Ask actual users to follow documentation and provide
+                            feedback on clarity and effectiveness.</li>
+                        <li><strong>Technical accuracy check</strong> — Verify all technical information, steps, and
+                            examples are correct and up-to-date.</li>
+                        <li><strong>Accessibility audit</strong> — Test documentation with assistive technologies and
+                            check against WCAG guidelines.</li>
+                        <li><strong>Link checking</strong> — Verify all links work and point to current resources.</li>
+                        <li><strong>Version control</strong> — Track changes, maintain version history, and clearly
+                            indicate document versions and last update dates.</li>
+                    </ul>
+                </div>
+                <div class="list">
+                    <strong>Maintenance strategies:</strong>
+                    <ul>
+                        <li><strong>Schedule regular reviews</strong> — Set review dates based on how frequently
+                            systems or processes change.</li>
+                        <li><strong>Monitor feedback</strong> — Track user questions, support tickets, and feedback to
+                            identify areas needing updates.</li>
+                        <li><strong>Update on system changes</strong> — Update documentation whenever related systems,
+                            processes, or policies change.</li>
+                        <li><strong>Archive outdated content</strong> — Keep old versions available but clearly marked
+                            as outdated, or move to an archive.</li>
+                        <li><strong>Maintain a changelog</strong> — Document what changed, when, and why to help users
+                            understand updates.</li>
+                        <li><strong>Establish ownership</strong> — Assign responsibility for maintaining specific
+                            documentation sections.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="panel" id="tools">
+                <h2>Tools & Formats</h2>
+                <p>
+                    The tools and formats you choose for documentation impact how easily you can create, maintain, and
+                    share information. Consider your audience, content type, and organizational needs when selecting
+                    tools.
+                </p>
+                <div class="list">
+                    <strong>Common documentation formats:</strong>
+                    <ul>
+                        <li><strong>Markdown</strong> — Lightweight markup language, great for version control and
+                            easy to read in plain text. Common for technical documentation.</li>
+                        <li><strong>HTML/Web</strong> — Interactive, searchable, and accessible. Good for user-facing
+                            documentation and knowledge bases.</li>
+                        <li><strong>PDF</strong> — Portable and consistent formatting. Useful for formal documents,
+                            policies, and printable guides.</li>
+                        <li><strong>Word/DOCX</strong> — Familiar format, good for collaborative editing, but less
+                            ideal for version control.</li>
+                        <li><strong>Wiki platforms</strong> — Collaborative editing, version history, and built-in
+                            search. Good for team knowledge bases.</li>
+                        <li><strong>Documentation generators</strong> — Tools like Sphinx, Jekyll, or Docusaurus that
+                            generate documentation from source files.</li>
+                    </ul>
+                </div>
+                <div class="list">
+                    <strong>Documentation tools to consider:</strong>
+                    <ul>
+                        <li><strong>Knowledge base platforms</strong> — Confluence, Notion, GitBook for collaborative
+                            documentation</li>
+                        <li><strong>Version control</strong> — Git for tracking changes and collaborating on
+                            documentation</li>
+                        <li><strong>Screen capture tools</strong> — Snagit, Greenshot, or built-in tools for creating
+                            annotated screenshots</li>
+                        <li><strong>Diagramming tools</strong> — Draw.io, Lucidchart, or Miro for creating visual
+                            diagrams</li>
+                        <li><strong>Accessibility checkers</strong> — WAVE, axe DevTools, or Lighthouse for testing
+                            accessibility</li>
+                        <li><strong>Grammar and style checkers</strong> — Grammarly, Hemingway Editor for improving
+                            writing quality</li>
+                    </ul>
+                </div>
+                <p class="note">
+                    For the DofE role, I would consider the organization's existing tools and platforms. Given the
+                            mention of Microsoft 365 in the role description, I might leverage SharePoint, Teams, or
+                            OneNote for collaborative documentation, while ensuring content is accessible and follows
+                            established standards.
+                </p>
+            </section>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="https://www.dofe.org/news/" target="_blank">The Latest</a></li>
+                    <li><a href="https://www.dofe.org/work-for-us/" target="_blank">Work for us</a></li>
+                    <li><a href="organisation.html">About the Organisation</a></li>
+                    <li><a href="role.html">The Role</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Interview Prep</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="organisation.html">Organisation</a></li>
+                    <li><a href="role.html">Role</a></li>
+                    <li><a href="questions.html">Questions</a></li>
+                    <li><a href="prep.html">Prep Plan</a></li>
+                    <li><a href="documentation.html">Documentation</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>My Current Work Projects</h3>
+                <ul>
+                    <li><a href="https://simple-cv-builder.com/" target="_blank">Simple CV Builder</a></li>
+                    <li><a href="https://simple-job-tracker.com/landing.php" target="_blank">Simple Job Tracker</a></li>
+                    <li><a href="https://simple-data-cleaner.com/" target="_blank">Simple Data Cleaner</a></li>
+                    <li><a href="https://wellis321.github.io/org-playbook/" target="_blank">Organisation Playbook</a>
+                    </li>
+                    <li><a href="https://wellis321.github.io/mcp-protocol-website/" target="_blank">MCP Protocol</a>
+                    </li>
+                    <li><a href="https://wellis321.github.io/national-age/" target="_blank">National Age
+                            Verification</a></li>
+                    <li><a href="https://policy-app-khaki.vercel.app/" target="_blank">Policy Management System</a></li>
+                    <li><a href="https://lavenderblush-hummingbird-585670.hostingersite.com/" target="_blank">Behaviour
+                            Observation &amp; Analysis Management System</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 William Ellis | Interview Prep Site</p>
+        </div>
+    </footer>
+</body>
+
+</html>
