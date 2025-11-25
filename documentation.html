@@ -37,8 +37,9 @@
         <aside class="sidebar-nav">
             <nav class="side-nav">
                 <strong class="side-nav-title">Contents</strong>
+                <a href="#current-state" class="side-nav-link">Current State Assessment</a>
                 <a href="#principles" class="side-nav-link">Core Principles</a>
-                <a href="#structure" class="side-nav-link">Structure & Organization</a>
+                <a href="#structure" class="side-nav-link">Structure & Organisation</a>
                 <a href="#writing-style" class="side-nav-link">Writing Style</a>
                 <a href="#technical-docs" class="side-nav-link">Technical Documentation</a>
                 <a href="#general-docs" class="side-nav-link">General Documentation</a>
@@ -50,6 +51,128 @@
         </aside>
 
         <main class="main-with-sidebar">
+            <section class="panel" id="current-state">
+                <h2>Current State Assessment: eDofE Documentation</h2>
+                <p>
+                    I've reviewed the current eDofE documentation platform at <a href="https://help.edofe.org/hc/en-gb/" target="_blank">help.edofe.org</a> and conducted a Lighthouse accessibility audit. This assessment helps me understand the current state of documentation and identify immediate opportunities for improvement.
+                </p>
+
+                <div class="card" style="margin-bottom: 2rem;">
+                    <h3>Lighthouse Accessibility Audit Results</h3>
+                    <p><strong>Overall Score: 24/27 (89%)</strong></p>
+                    <p>
+                        While the documentation platform has a good foundation, there are clear accessibility issues that need to be addressed to ensure the documentation is accessible to all users, including those with disabilities.
+                    </p>
+                </div>
+
+                <div class="list">
+                    <strong>Critical Issues Identified:</strong>
+                    <ul>
+                        <li><strong>Contrast Issues:</strong> Background and foreground colours do not have sufficient contrast ratios. This affects legibility and can make content difficult or impossible to read for users with visual impairments or in certain lighting conditions.</li>
+                        <li><strong>Missing Language Attribute:</strong> The HTML element does not have a [lang] attribute. This is important for screen readers and other assistive technologies to correctly interpret and pronounce content, especially for users who may be using the site in different languages.</li>
+                        <li><strong>Heading Structure:</strong> Heading elements are not in a sequentially-descending order. This creates navigation problems for users relying on keyboard navigation and screen readers, as they use headings to understand document structure and navigate content.</li>
+                    </ul>
+                </div>
+
+                <div class="list" style="margin-top: 2rem;">
+                    <strong>Additional Manual Checks Required (10 items):</strong>
+                    <ul>
+                        <li>These items require manual testing that automated tools cannot cover, including keyboard navigation, screen reader compatibility, focus management, and other user experience considerations.</li>
+                    </ul>
+                </div>
+
+                <div class="list" style="margin-top: 2rem;">
+                    <strong>SEO Issues:</strong>
+                    <ul>
+                        <li>Score: 5/6 - While basic SEO is in place, there may be opportunities to improve search engine optimization to help users find relevant documentation more easily.</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="margin-top: 2rem; background: #f8fbff; border-left: 4px solid var(--primary);">
+                    <h3>Why This Matters</h3>
+                    <p>
+                        As the IT Knowledge & Content Coordinator, addressing these accessibility issues would be a priority because:
+                    </p>
+                    <ul>
+                        <li><strong>Legal Compliance:</strong> The DofE, like all UK organisations, must comply with the Equality Act 2010 and WCAG 2.1 accessibility standards</li>
+                        <li><strong>Inclusive Access:</strong> The DofE's "Youth Without Limits" vision means ensuring documentation is accessible to all users, including those with disabilities</li>
+                        <li><strong>User Experience:</strong> Poor accessibility affects all users, not just those with disabilities - good contrast and clear structure benefit everyone</li>
+                        <li><strong>Knowledge Sharing:</strong> If documentation is difficult to access or navigate, it undermines the goal of effective knowledge sharing across the organisation</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="margin-top: 2rem;">
+                    <h3>Immediate Action Items</h3>
+                    <p>
+                        If I were to start in this role, I would prioritise:
+                    </p>
+                    <ul>
+                        <li>Fixing contrast ratios to meet WCAG AA standards (minimum 4.5:1 for normal text, 3:1 for large text)</li>
+                        <li>Adding proper lang attributes to HTML elements</li>
+                        <li>Restructuring heading hierarchy to follow a logical sequence (h1 → h2 → h3, etc.)</li>
+                        <li>Conducting manual accessibility testing with keyboard navigation and screen readers</li>
+                        <li>Creating an accessibility improvement roadmap as part of the documentation modernisation project</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="margin-top: 2rem; background: #fff3e0; border-left: 4px solid #ff9800;">
+                    <h3>Platform Analysis: Zendesk vs Self-Hosted Documentation</h3>
+                    <p>
+                        I've identified that the current documentation is hosted on Zendesk (help.edofe.org). While Zendesk provides a ready-made solution, there are compelling reasons to consider migrating to self-hosted static HTML pages, especially given the accessibility issues identified and the DofE's need for full control over their knowledge resources.
+                    </p>
+
+                    <div class="list" style="margin-top: 1.5rem;">
+                        <strong>Why organisations typically choose Zendesk:</strong>
+                        <ul>
+                            <li><strong>Quick setup:</strong> Pre-built platform with minimal technical requirements</li>
+                            <li><strong>Built-in features:</strong> Search, categories, user feedback, analytics included</li>
+                            <li><strong>Support ticket integration:</strong> Can link documentation to support tickets</li>
+                            <li><strong>Multi-user editing:</strong> Built-in content management and workflow</li>
+                            <li><strong>Maintenance handled:</strong> Platform updates and hosting managed by vendor</li>
+                        </ul>
+                    </div>
+
+                    <div class="list" style="margin-top: 1.5rem;">
+                        <strong>Why self-hosted static HTML pages would be better for DofE:</strong>
+                        <ul>
+                            <li><strong>Full accessibility control:</strong> Complete control over ARIA attributes, semantic HTML, heading structure, and contrast ratios - addressing all the issues identified in the Lighthouse audit</li>
+                            <li><strong>Custom styling:</strong> Match DofE branding exactly, ensure consistent visual identity across all platforms</li>
+                            <li><strong>No vendor lock-in:</strong> Content isn't trapped in a proprietary platform - easier to migrate, backup, and version control</li>
+                            <li><strong>Cost efficiency:</strong> No ongoing subscription fees - can host on existing infrastructure or low-cost static hosting (GitHub Pages, Netlify, etc.)</li>
+                            <li><strong>Performance:</strong> Static HTML pages load faster, work offline, and can be cached effectively</li>
+                            <li><strong>Version control:</strong> Can use Git for content versioning, review processes, and collaboration</li>
+                            <li><strong>Integration flexibility:</strong> Easier to integrate with eDofE, internal systems, and custom workflows</li>
+                            <li><strong>SEO control:</strong> Full control over meta tags, structured data, and search optimisation</li>
+                            <li><strong>Compliance:</strong> Easier to ensure GDPR compliance, data sovereignty, and security requirements</li>
+                        </ul>
+                    </div>
+
+                    <div class="card" style="margin-top: 1.5rem; background: #f8fbff;">
+                        <h4>My Approach to Migration</h4>
+                        <p>
+                            If I were to propose migrating from Zendesk to self-hosted static pages, I would:
+                        </p>
+                        <ul>
+                            <li><strong>Export existing content:</strong> Use Zendesk's export functionality to extract all articles and metadata</li>
+                            <li><strong>Create a static site generator workflow:</strong> Use tools like Jekyll, Hugo, or Eleventy to convert content to static HTML with proper structure</li>
+                            <li><strong>Implement proper accessibility:</strong> Build templates with correct ARIA attributes, semantic HTML, proper heading hierarchy, and WCAG-compliant styling from the ground up</li>
+                            <li><strong>Maintain search functionality:</strong> Implement client-side search (Algolia, Lunr.js) or integrate with existing search infrastructure</li>
+                            <li><strong>Preserve URLs:</strong> Set up redirects to maintain SEO and user bookmarks</li>
+                            <li><strong>Create an editing workflow:</strong> Use Git-based workflows or a headless CMS that generates static HTML</li>
+                            <li><strong>Host on existing infrastructure:</strong> Leverage DofE's existing hosting or use cost-effective static hosting</li>
+                        </ul>
+                    </div>
+
+                    <p style="margin-top: 1.5rem;">
+                        <strong>The key advantage:</strong> With self-hosted static pages, I would have complete control over every aspect of the documentation - from the HTML structure and ARIA attributes to the styling and user experience. This means I could fix all the accessibility issues identified in the Lighthouse audit, ensure perfect branding alignment, and create a documentation platform that truly serves the DofE's needs without being constrained by a third-party platform's limitations.
+                    </p>
+                </div>
+
+                <p class="note" style="margin-top: 2rem;">
+                    This assessment demonstrates my understanding that good documentation isn't just about content quality - it's also about ensuring that content is accessible, findable, and usable by all intended users. This aligns with the DofE's commitment to accessibility and the role's responsibility for creating inclusive knowledge resources. The platform choice directly impacts our ability to meet these goals.
+                </p>
+            </section>
+
             <section class="panel" id="principles">
                 <h2>Core Principles of Good Documentation</h2>
                 <p>
@@ -84,9 +207,9 @@
             </section>
 
             <section class="panel" id="structure">
-                <h2>Structure & Organization</h2>
+                <h2>Structure & Organisation</h2>
                 <p>
-                    Well-organized documentation helps users navigate information efficiently and find what they need
+                    Well-organised documentation helps users navigate information efficiently and find what they need
                     quickly. A clear structure also makes documentation easier to maintain and update.
                 </p>
                 <div class="list">
@@ -94,7 +217,7 @@
                     <ul>
                         <li><strong>Start with an overview</strong> — Begin with a brief summary of what the document
                             covers, who it's for, and what they'll learn or accomplish.</li>
-                        <li><strong>Use a logical hierarchy</strong> — Organize content from general to specific, or
+                        <li><strong>Use a logical hierarchy</strong> — Organise content from general to specific, or
                             follow a workflow (setup → usage → troubleshooting).</li>
                         <li><strong>Create a table of contents</strong> — For longer documents, provide a clear TOC with
                             links to sections.</li>
@@ -226,7 +349,7 @@
                 <div class="list">
                     <strong>Types of general documentation:</strong>
                     <ul>
-                        <li><strong>Policy documents</strong> — Explain rules, guidelines, and organizational
+                        <li><strong>Policy documents</strong> — Explain rules, guidelines, and organisational
                             standards. Should be clear, unambiguous, and include rationale where helpful.</li>
                         <li><strong>Procedure guides</strong> — Step-by-step instructions for completing specific tasks
                             or workflows.</li>
@@ -310,7 +433,7 @@
                             and elements improves readability.</li>
                         <li><strong>Highlight important information</strong> — Use bold, italics, or callout boxes
                             sparingly to draw attention to key points, warnings, or tips.</li>
-                        <li><strong>Create visual hierarchy</strong> — Use font sizes, weights, and colors to show
+                        <li><strong>Create visual hierarchy</strong> — Use font sizes, weights, and colours to show
                             relationships between information.</li>
                         <li><strong>Use lists for multiple items</strong> — Bullet points for unordered items, numbered
                             lists for sequential steps.</li>
@@ -327,7 +450,7 @@
                     <ul>
                         <li><strong>Screenshots</strong> — Show interfaces, dialogs, and results. Annotate screenshots
                             to highlight important elements.</li>
-                        <li><strong>Diagrams and flowcharts</strong> — Visualize processes, workflows, and system
+                        <li><strong>Diagrams and flowcharts</strong> — Visualise processes, workflows, and system
                             architecture.</li>
                         <li><strong>Icons and symbols</strong> — Use consistent icons to represent concepts (e.g.,
                             warning icons, tip icons, information icons).</li>
@@ -384,7 +507,7 @@
                 <h2>Tools & Formats</h2>
                 <p>
                     The tools and formats you choose for documentation impact how easily you can create, maintain, and
-                    share information. Consider your audience, content type, and organizational needs when selecting
+                    share information. Consider your audience, content type, and organisational needs when selecting
                     tools.
                 </p>
                 <div class="list">
@@ -422,7 +545,7 @@
                     </ul>
                 </div>
                 <p class="note">
-                    For the DofE role, I would consider the organization's existing tools and platforms. Given the
+                    For the DofE role, I would consider the organisation's existing tools and platforms. Given the
                             mention of Microsoft 365 in the role description, I might leverage SharePoint, Teams, or
                             OneNote for collaborative documentation, while ensuring content is accessible and follows
                             established standards.
