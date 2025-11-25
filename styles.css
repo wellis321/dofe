@@ -36,6 +36,10 @@ a:hover {
     color: #0b1b3a;
 }
 
+.logo:hover {
+    color: #fff !important;
+}
+
 .site-header {
     background: linear-gradient(135deg, var(--primary-dark), var(--primary));
     color: #fff;
@@ -237,7 +241,7 @@ main {
 .cards-grid,
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: 1fr; /* Changed to single column for all card grids */
     gap: 1rem;
     margin-top: 1rem;
 }

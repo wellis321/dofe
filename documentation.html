@@ -21,6 +21,7 @@
                 <a href="prep.html" class="nav-link">Prep</a>
                 <a href="documentation.html" class="nav-link active" aria-current="page">Documentation</a>
                 <a href="cv.html" class="nav-link">CV</a>
+                <a href="training.html" class="nav-link">Training</a>
             </div>
         </nav>
         <div class="hero">
@@ -45,6 +46,7 @@
                 <a href="#general-docs" class="side-nav-link">General Documentation</a>
                 <a href="#accessibility" class="side-nav-link">Accessibility</a>
                 <a href="#formatting" class="side-nav-link">Formatting & Visuals</a>
+                <a href="#quality" class="side-nav-link">Quality Assurance</a>
                 <a href="#review" class="side-nav-link">Review & Maintenance</a>
                 <a href="#tools" class="side-nav-link">Tools & Formats</a>
             </nav>
@@ -54,50 +56,86 @@
             <section class="panel" id="current-state">
                 <h2>Current State Assessment: eDofE Documentation</h2>
                 <p>
-                    I've reviewed the current eDofE documentation platform at <a href="https://help.edofe.org/hc/en-gb/" target="_blank">help.edofe.org</a> and conducted a Lighthouse accessibility audit. This assessment helps me understand the current state of documentation and identify immediate opportunities for improvement.
+                    I've reviewed the current eDofE documentation platform at <a href="https://help.edofe.org/hc/en-gb/"
+                        target="_blank">help.edofe.org</a> and conducted a Lighthouse accessibility audit. This
+                    assessment helps me understand the current state of documentation and identify immediate
+                    opportunities for improvement.
                 </p>
 
                 <div class="card" style="margin-bottom: 2rem;">
                     <h3>Lighthouse Accessibility Audit Results</h3>
                     <p><strong>Overall Score: 24/27 (89%)</strong></p>
                     <p>
-                        While the documentation platform has a good foundation, there are clear accessibility issues that need to be addressed to ensure the documentation is accessible to all users, including those with disabilities.
+                        While the documentation platform has a good foundation, there are clear accessibility issues
+                        that need to be addressed to ensure the documentation is accessible to all users.
                     </p>
                 </div>
 
                 <div class="list">
                     <strong>Critical Issues Identified:</strong>
                     <ul>
-                        <li><strong>Contrast Issues:</strong> Background and foreground colours do not have sufficient contrast ratios. This affects legibility and can make content difficult or impossible to read for users with visual impairments or in certain lighting conditions.</li>
-                        <li><strong>Missing Language Attribute:</strong> The HTML element does not have a [lang] attribute. This is important for screen readers and other assistive technologies to correctly interpret and pronounce content, especially for users who may be using the site in different languages.</li>
-                        <li><strong>Heading Structure:</strong> Heading elements are not in a sequentially-descending order. This creates navigation problems for users relying on keyboard navigation and screen readers, as they use headings to understand document structure and navigate content.</li>
+                        <li><strong>Contrast Issues:</strong> Background and foreground colours do not have sufficient
+                            contrast ratios. This affects legibility and can make content difficult or impossible to
+                            read for users with visual impairments or in certain lighting conditions.</li>
+                        <li><strong>Missing Language Attribute:</strong> The HTML element does not have a [lang]
+                            attribute. This is important for screen readers and other assistive technologies to
+                            correctly interpret and pronounce content, especially for users who may be using the site in
+                            different languages.</li>
+                        <li><strong>Heading Structure:</strong> Heading elements are not in a sequentially-descending
+                            order. This creates navigation problems for users relying on keyboard navigation and screen
+                            readers, as they use headings to understand document structure and navigate content.</li>
                     </ul>
                 </div>
 
                 <div class="list" style="margin-top: 2rem;">
                     <strong>Additional Manual Checks Required (10 items):</strong>
                     <ul>
-                        <li>These items require manual testing that automated tools cannot cover, including keyboard navigation, screen reader compatibility, focus management, and other user experience considerations.</li>
+                        <li>These items require manual testing that automated tools cannot cover, including keyboard
+                            navigation, screen reader compatibility, focus management, and other user experience
+                            considerations.</li>
                     </ul>
                 </div>
 
                 <div class="list" style="margin-top: 2rem;">
                     <strong>SEO Issues:</strong>
                     <ul>
-                        <li>Score: 5/6 - While basic SEO is in place, there may be opportunities to improve search engine optimization to help users find relevant documentation more easily.</li>
+                        <li>Score: 5/6 - While basic SEO is in place, there may be opportunities to improve search
+                            engine optimisation to help users find relevant documentation more easily.</li>
+                    </ul>
+                </div>
+
+                <div class="list" style="margin-top: 2rem;">
+                    <strong>Additional Technical Issues Found:</strong>
+                    <ul>
+                        <li><strong>Enhanced Tracking Protection Blocks:</strong> Resources are being blocked by
+                            Firefox's Enhanced Tracking Protection, indicating potential privacy/tracking concerns with
+                            third-party scripts</li>
+                        <li><strong>CORS Policy Violations:</strong> Cross-Origin Request Blocked errors for Zendesk
+                            embeddable config, suggesting improper cross-domain resource configuration</li>
+                        <li><strong>WebSocket Connection Failures:</strong> Failed connections to Zopim chat widget
+                            servers (wss://widget-mediator.zopim.com), indicating unreliable chat functionality</li>
+                        <li><strong>Third-Party Dependencies:</strong> Heavy reliance on external services (Zendesk,
+                            Zopim) that can fail independently and impact user experience</li>
                     </ul>
                 </div>
 
                 <div class="card" style="margin-top: 2rem; background: #f8fbff; border-left: 4px solid var(--primary);">
                     <h3>Why This Matters</h3>
                     <p>
-                        As the IT Knowledge & Content Coordinator, addressing these accessibility issues would be a priority because:
+                        As the IT Knowledge & Content Coordinator, addressing these accessibility issues would be a
+                        priority because:
                     </p>
                     <ul>
-                        <li><strong>Legal Compliance:</strong> The DofE, like all UK organisations, must comply with the Equality Act 2010 and WCAG 2.1 accessibility standards</li>
-                        <li><strong>Inclusive Access:</strong> The DofE's "Youth Without Limits" vision means ensuring documentation is accessible to all users, including those with disabilities</li>
-                        <li><strong>User Experience:</strong> Poor accessibility affects all users, not just those with disabilities - good contrast and clear structure benefit everyone</li>
-                        <li><strong>Knowledge Sharing:</strong> If documentation is difficult to access or navigate, it undermines the goal of effective knowledge sharing across the organisation</li>
+                        <li><strong>Legal Compliance:</strong> The DofE, like all UK organisations, must comply with the
+                            Equality Act 2010 and WCAG 2.1 accessibility standards</li>
+                        <li><strong>Inclusive Access:</strong> The DofE's "Youth Without Limits" vision means ensuring
+                            documentation is accessible to all users, including those with disabilities</li>
+                        <li><strong>User Experience:</strong> Poor accessibility affects all users - good contrast and
+                            clear structure benefits everyone</li>
+                        <li><strong>Knowledge Sharing:</strong> If documentation is difficult to access or navigate, it
+                            undermines the goal of effective knowledge sharing across the organisation</li>
+                        <li><strong>Technical Reliability:</strong> Browser compatibility issues, failed connections,
+                            and third-party dependencies create barriers to accessing critical information</li>
                     </ul>
                 </div>
 
@@ -107,43 +145,64 @@
                         If I were to start in this role, I would prioritise:
                     </p>
                     <ul>
-                        <li>Fixing contrast ratios to meet WCAG AA standards (minimum 4.5:1 for normal text, 3:1 for large text)</li>
+                        <li>Fixing contrast ratios to meet WCAG AA standards (minimum 4.5:1 for normal text, 3:1 for
+                            large text)</li>
                         <li>Adding proper lang attributes to HTML elements</li>
                         <li>Restructuring heading hierarchy to follow a logical sequence (h1 → h2 → h3, etc.)</li>
                         <li>Conducting manual accessibility testing with keyboard navigation and screen readers</li>
-                        <li>Creating an accessibility improvement roadmap as part of the documentation modernisation project</li>
+                        <li>Resolving CORS and WebSocket connection issues to ensure reliable functionality</li>
+                        <li>Reducing dependency on third-party services that can fail independently</li>
+                        <li>Creating an accessibility improvement roadmap as part of the documentation modernisation
+                            project</li>
                     </ul>
                 </div>
 
                 <div class="card" style="margin-top: 2rem; background: #fff3e0; border-left: 4px solid #ff9800;">
                     <h3>Platform Analysis: Zendesk vs Self-Hosted Documentation</h3>
                     <p>
-                        I've identified that the current documentation is hosted on Zendesk (help.edofe.org). While Zendesk provides a ready-made solution, there are compelling reasons to consider migrating to self-hosted static HTML pages, especially given the accessibility issues identified and the DofE's need for full control over their knowledge resources.
+                        I've identified that the current documentation is hosted on Zendesk (help.edofe.org). While
+                        Zendesk provides a ready-made solution, there are compelling reasons to consider migrating to
+                        self-hosted static HTML pages, especially given the accessibility issues identified and the
+                        DofE's need for full control over their knowledge resources.
                     </p>
 
                     <div class="list" style="margin-top: 1.5rem;">
                         <strong>Why organisations typically choose Zendesk:</strong>
                         <ul>
-                            <li><strong>Quick setup:</strong> Pre-built platform with minimal technical requirements</li>
-                            <li><strong>Built-in features:</strong> Search, categories, user feedback, analytics included</li>
-                            <li><strong>Support ticket integration:</strong> Can link documentation to support tickets</li>
+                            <li><strong>Quick setup:</strong> Pre-built platform with minimal technical requirements
+                            </li>
+                            <li><strong>Built-in features:</strong> Search, categories, user feedback, analytics
+                                included</li>
+                            <li><strong>Support ticket integration:</strong> Can link documentation to support tickets
+                            </li>
                             <li><strong>Multi-user editing:</strong> Built-in content management and workflow</li>
-                            <li><strong>Maintenance handled:</strong> Platform updates and hosting managed by vendor</li>
+                            <li><strong>Maintenance handled:</strong> Platform updates and hosting managed by vendor
+                            </li>
                         </ul>
                     </div>
 
                     <div class="list" style="margin-top: 1.5rem;">
                         <strong>Why self-hosted static HTML pages would be better for DofE:</strong>
                         <ul>
-                            <li><strong>Full accessibility control:</strong> Complete control over ARIA attributes, semantic HTML, heading structure, and contrast ratios - addressing all the issues identified in the Lighthouse audit</li>
-                            <li><strong>Custom styling:</strong> Match DofE branding exactly, ensure consistent visual identity across all platforms</li>
-                            <li><strong>No vendor lock-in:</strong> Content isn't trapped in a proprietary platform - easier to migrate, backup, and version control</li>
-                            <li><strong>Cost efficiency:</strong> No ongoing subscription fees - can host on existing infrastructure or low-cost static hosting (GitHub Pages, Netlify, etc.)</li>
-                            <li><strong>Performance:</strong> Static HTML pages load faster, work offline, and can be cached effectively</li>
-                            <li><strong>Version control:</strong> Can use Git for content versioning, review processes, and collaboration</li>
-                            <li><strong>Integration flexibility:</strong> Easier to integrate with eDofE, internal systems, and custom workflows</li>
-                            <li><strong>SEO control:</strong> Full control over meta tags, structured data, and search optimisation</li>
-                            <li><strong>Compliance:</strong> Easier to ensure GDPR compliance, data sovereignty, and security requirements</li>
+                            <li><strong>Full accessibility control:</strong> Complete control over ARIA attributes,
+                                semantic HTML, heading structure, and contrast ratios - addressing all the issues
+                                identified in the Lighthouse audit</li>
+                            <li><strong>Custom styling:</strong> Match DofE branding exactly, ensure consistent visual
+                                identity across all platforms</li>
+                            <li><strong>No vendor lock-in:</strong> Content isn't trapped in a proprietary platform -
+                                easier to migrate, backup, and version control</li>
+                            <li><strong>Cost efficiency:</strong> No ongoing subscription fees - can host on existing
+                                infrastructure or low-cost static hosting (GitHub Pages, Netlify, etc.)</li>
+                            <li><strong>Performance:</strong> Static HTML pages load faster, work offline, and can be
+                                cached effectively</li>
+                            <li><strong>Version control:</strong> Can use Git for content versioning, review processes,
+                                and collaboration</li>
+                            <li><strong>Integration flexibility:</strong> Easier to integrate with eDofE, internal
+                                systems, and custom workflows</li>
+                            <li><strong>SEO control:</strong> Full control over meta tags, structured data, and search
+                                optimisation</li>
+                            <li><strong>Compliance:</strong> Easier to ensure GDPR compliance, data sovereignty, and
+                                security requirements</li>
                         </ul>
                     </div>
 
@@ -153,23 +212,39 @@
                             If I were to propose migrating from Zendesk to self-hosted static pages, I would:
                         </p>
                         <ul>
-                            <li><strong>Export existing content:</strong> Use Zendesk's export functionality to extract all articles and metadata</li>
-                            <li><strong>Create a static site generator workflow:</strong> Use tools like Jekyll, Hugo, or Eleventy to convert content to static HTML with proper structure</li>
-                            <li><strong>Implement proper accessibility:</strong> Build templates with correct ARIA attributes, semantic HTML, proper heading hierarchy, and WCAG-compliant styling from the ground up</li>
-                            <li><strong>Maintain search functionality:</strong> Implement client-side search (Algolia, Lunr.js) or integrate with existing search infrastructure</li>
+                            <li><strong>Export existing content:</strong> Use Zendesk's export functionality to extract
+                                all articles and metadata</li>
+                            <li><strong>Create a static site generator workflow:</strong> Use tools like Jekyll, Hugo,
+                                or Eleventy to convert content to static HTML with proper structure</li>
+                            <li><strong>Implement proper accessibility:</strong> Build templates with correct ARIA
+                                attributes, semantic HTML, proper heading hierarchy, and WCAG-compliant styling from the
+                                ground up</li>
+                            <li><strong>Maintain search functionality:</strong> Implement client-side search (Algolia,
+                                Lunr.js) or integrate with existing search infrastructure</li>
                             <li><strong>Preserve URLs:</strong> Set up redirects to maintain SEO and user bookmarks</li>
-                            <li><strong>Create an editing workflow:</strong> Use Git-based workflows or a headless CMS that generates static HTML</li>
-                            <li><strong>Host on existing infrastructure:</strong> Leverage DofE's existing hosting or use cost-effective static hosting</li>
+                            <li><strong>Create an editing workflow:</strong> Use Git-based workflows or a headless CMS
+                                that generates static HTML</li>
+                            <li><strong>Host on existing infrastructure:</strong> Leverage DofE's existing hosting or
+                                use cost-effective static hosting</li>
                         </ul>
                     </div>
 
                     <p style="margin-top: 1.5rem;">
-                        <strong>The key advantage:</strong> With self-hosted static pages, I would have complete control over every aspect of the documentation - from the HTML structure and ARIA attributes to the styling and user experience. This means I could fix all the accessibility issues identified in the Lighthouse audit, ensure perfect branding alignment, and create a documentation platform that truly serves the DofE's needs without being constrained by a third-party platform's limitations.
+                        <strong>The key advantage:</strong> With self-hosted static pages, I would have complete control
+                        over every aspect of the documentation - from the HTML structure and ARIA attributes to the
+                        styling and user experience. This means I could fix all the accessibility issues identified in
+                        the Lighthouse audit, ensure perfect branding alignment, and create a documentation platform
+                        that truly serves the DofE's needs without being constrained by a third-party platform's
+                        limitations.
                     </p>
                 </div>
 
                 <p class="note" style="margin-top: 2rem;">
-                    This assessment demonstrates my understanding that good documentation isn't just about content quality - it's also about ensuring that content is accessible, findable, and usable by all intended users. This aligns with the DofE's commitment to accessibility and the role's responsibility for creating inclusive knowledge resources. The platform choice directly impacts our ability to meet these goals.
+                    This assessment demonstrates my understanding that good documentation isn't just about content
+                    quality - it's also about ensuring that content is accessible, findable, and usable by all intended
+                    users. This aligns with the DofE's commitment to accessibility and the role's responsibility for
+                    creating inclusive knowledge resources. The platform choice directly impacts our ability to meet
+                    these goals.
                 </p>
             </section>
 
@@ -223,7 +298,8 @@
                             links to sections.</li>
                         <li><strong>Use descriptive headings</strong> — Headings should clearly indicate the content
                             beneath them. Use consistent heading levels (H1, H2, H3).</li>
-                        <li><strong>Group related information</strong> — Keep related concepts together. Use sections and
+                        <li><strong>Group related information</strong> — Keep related concepts together. Use sections
+                            and
                             subsections to break up content logically.</li>
                         <li><strong>Include navigation aids</strong> — Add "Next" and "Previous" links, breadcrumbs, or
                             a sidebar navigation for longer documents.</li>
@@ -278,7 +354,8 @@
                     <ul>
                         <li><strong>Professional but friendly</strong> — Be approachable without being overly casual.
                         </li>
-                        <li><strong>Confident and helpful</strong> — Write as if you're guiding a colleague, not lecturing
+                        <li><strong>Confident and helpful</strong> — Write as if you're guiding a colleague, not
+                            lecturing
                             a student.</li>
                         <li><strong>Inclusive</strong> — Use gender-neutral language and avoid assumptions about the
                             user's background or experience.</li>
@@ -292,7 +369,8 @@
                 <h2>Technical Documentation</h2>
                 <p>
                     Technical documentation explains how systems, software, or processes work. It's used by developers,
-                    system administrators, support staff, and end users. Good technical documentation balances depth with
+                    system administrators, support staff, and end users. Good technical documentation balances depth
+                    with
                     accessibility.
                 </p>
                 <div class="list">
@@ -333,9 +411,9 @@
                 </div>
                 <p class="note">
                     For the DofE role, technical documentation might cover eDofE workflows, Microsoft 365 features, or
-                            Dynamics processes. I would ensure documentation includes clear step-by-step instructions,
-                            screenshots of key interfaces, and troubleshooting guidance for common issues staff might
-                            encounter.
+                    Dynamics processes. I would ensure documentation includes clear step-by-step instructions,
+                    screenshots of key interfaces, and troubleshooting guidance for common issues staff might
+                    encounter.
                 </p>
             </section>
 
@@ -343,7 +421,8 @@
                 <h2>General Documentation</h2>
                 <p>
                     General documentation covers policies, procedures, knowledge articles, and user guides. It's often
-                    read by non-technical audiences who need clear, practical information to complete tasks or understand
+                    read by non-technical audiences who need clear, practical information to complete tasks or
+                    understand
                     processes.
                 </p>
                 <div class="list">
@@ -389,6 +468,146 @@
                     can understand and use the information. This aligns with WCAG (Web Content Accessibility Guidelines)
                     principles and inclusive design.
                 </p>
+
+                <div class="card"
+                    style="margin-bottom: 2rem; background: #f8fbff; border-left: 4px solid var(--primary);">
+                    <h3>What is WCAG?</h3>
+                    <p>
+                        <strong>WCAG (Web Content Accessibility Guidelines)</strong> is the international standard for
+                        web accessibility, developed by the World Wide Web Consortium (W3C). It provides comprehensive
+                        guidelines for making web content accessible to people with disabilities, including visual,
+                        auditory, physical, speech, cognitive, language, learning, and neurological disabilities.
+                    </p>
+
+                    <div class="list" style="margin-top: 1.5rem;">
+                        <strong>WCAG Versions & Compliance Levels:</strong>
+                        <ul>
+                            <li><strong>WCAG 2.1 (Current Standard):</strong> The most widely adopted version, required
+                                by UK law under the Equality Act 2010</li>
+                            <li><strong>WCAG 2.2 (Latest):</strong> Published in 2023 with additional guidelines,
+                                becoming the new recommended standard</li>
+                            <li><strong>Level A:</strong> Basic accessibility - minimum level of conformance</li>
+                            <li><strong>Level AA:</strong> Standard accessibility - required by most legislation
+                                including UK law</li>
+                            <li><strong>Level AAA:</strong> Enhanced accessibility - highest level, not required by law
+                                but recommended where possible</li>
+                        </ul>
+                    </div>
+
+                    <div class="list" style="margin-top: 1.5rem;">
+                        <strong>The Four WCAG Principles (POUR):</strong>
+                        <ul>
+                            <li><strong>Perceivable:</strong> Information must be presentable in ways users can perceive
+                                (text alternatives for images, captions for videos, sufficient colour contrast)</li>
+                            <li><strong>Operable:</strong> Interface components must be operable (keyboard accessible,
+                                no seizure-inducing content, users have enough time to read content)</li>
+                            <li><strong>Understandable:</strong> Information and UI operation must be understandable
+                                (readable text, predictable functionality, input assistance)</li>
+                            <li><strong>Robust:</strong> Content must be robust enough for interpretation by assistive
+                                technologies (valid HTML, compatible with screen readers)</li>
+                        </ul>
+                    </div>
+
+                    <div class="list" style="margin-top: 1.5rem;">
+                        <strong>Key WCAG Requirements for Documentation:</strong>
+                        <ul>
+                            <li><strong>Colour Contrast:</strong> Minimum 4.5:1 ratio for normal text, 3:1 for large
+                                text (18pt+ or 14pt+ bold)</li>
+                            <li><strong>Alternative Text:</strong> Descriptive alt text for all informative images,
+                                diagrams, and screenshots</li>
+                            <li><strong>Heading Structure:</strong> Logical heading hierarchy (H1 → H2 → H3) for screen
+                                reader navigation</li>
+                            <li><strong>Keyboard Navigation:</strong> All interactive elements must be accessible via
+                                keyboard alone</li>
+                            <li><strong>Language Attributes:</strong> HTML lang attributes to help screen readers
+                                pronounce content correctly</li>
+                            <li><strong>Link Context:</strong> Links must make sense out of context ("Download user
+                                guide" not "click here")</li>
+                            <li><strong>Form Labels:</strong> All form inputs must have associated labels</li>
+                            <li><strong>Focus Indicators:</strong> Visible focus indicators for keyboard users</li>
+                        </ul>
+                    </div>
+
+                    <p style="margin-top: 1.5rem;">
+                        <strong>Legal Requirements:</strong> In the UK, public sector organisations must meet WCAG 2.1
+                        AA standards under the Public Sector Bodies (Websites and Mobile Applications) Accessibility
+                        Regulations 2018. Private organisations must ensure reasonable adjustments under the Equality
+                        Act 2010. The DofE, as a charity serving the public, should aim for WCAG 2.1 AA compliance as a
+                        minimum.
+                    </p>
+                </div>
+
+                <div class="card" style="margin-bottom: 2rem; background: #fff3e0; border-left: 4px solid #ff9800;">
+                    <h3>WCAG vs A11Y: What's the Difference?</h3>
+                    <p>
+                        <strong>A11Y</strong> (numeronym for "accessibility" - A + 11 letters + Y) is the broader
+                        concept and community movement around digital accessibility, while <strong>WCAG</strong> is the
+                        specific technical standard that implements A11Y principles.
+                    </p>
+
+                    <div class="list" style="margin-top: 1.5rem;">
+                        <strong>A11Y (Accessibility) - The Movement:</strong>
+                        <ul>
+                            <li><strong>Community-driven:</strong> Developed by and with disabled people, accessibility
+                                advocates, developers, and designers working together</li>
+                            <li><strong>Broader scope:</strong> Encompasses all aspects of digital accessibility - not
+                                just web content but apps, software, hardware, and user experience</li>
+                            <li><strong>"Nothing About Us, Without Us":</strong> The disability rights principle that
+                                accessibility solutions must involve disabled people in their development</li>
+                            <li><strong>Lived experience:</strong> A11Y emphasises real-world testing by people who
+                                actually use assistive technologies daily</li>
+                            <li><strong>Inclusive design:</strong> Focuses on designing for the widest range of human
+                                diversity from the start, not retrofitting</li>
+                        </ul>
+                    </div>
+
+                    <div class="list" style="margin-top: 1.5rem;">
+                        <strong>WCAG - The Technical Standard:</strong>
+                        <ul>
+                            <li><strong>Formal specification:</strong> Official W3C standard with specific, measurable
+                                criteria</li>
+                            <li><strong>Legal compliance:</strong> Used by governments and courts to determine
+                                accessibility compliance</li>
+                            <li><strong>Technical focus:</strong> Specific to web content (HTML, CSS, JavaScript) rather
+                                than broader accessibility</li>
+                            <li><strong>Testable guidelines:</strong> Provides concrete success criteria that can be
+                                automated or manually tested</li>
+                            <li><strong>Minimum baseline:</strong> WCAG compliance is the floor, not the ceiling, of
+                                good accessibility</li>
+                        </ul>
+                    </div>
+
+                    <div class="card" style="margin-top: 1.5rem; background: #f8fbff;">
+                        <h4>"For the People, By the People"</h4>
+                        <p>
+                            <strong>Yes, A11Y is fundamentally developed by and for disabled people:</strong>
+                        </p>
+                        <ul>
+                            <li><strong>Disability-led organisations:</strong> Groups like the National Federation of
+                                the Blind, Deaf community organisations, and disability rights advocates drive A11Y
+                                standards</li>
+                            <li><strong>User testing:</strong> Real accessibility improvements come from testing with
+                                actual disabled users, not just automated tools</li>
+                            <li><strong>Community knowledge:</strong> The A11Y community shares techniques, workarounds,
+                                and best practices based on lived experience</li>
+                            <li><strong>Advocacy and education:</strong> Disabled developers, designers, and advocates
+                                teach others how to build accessible products</li>
+                        </ul>
+                        <p>
+                            <strong>WCAG development also involves disabled people:</strong> The W3C Web Accessibility
+                            Initiative includes disabled people in working groups, but the formal standard-setting
+                            process is more institutional than the grassroots A11Y movement.
+                        </p>
+                    </div>
+
+                    <p style="margin-top: 1.5rem;">
+                        <strong>In practice:</strong> I follow WCAG for legal compliance and measurable standards, but I
+                        engage with the broader A11Y community to understand real user needs. WCAG tells me the minimum
+                        contrast ratio; A11Y practitioners tell me why that matters and how users actually experience
+                        poor contrast. Both are essential for creating truly accessible documentation.
+                    </p>
+                </div>
+
                 <div class="list">
                     <strong>Accessibility best practices:</strong>
                     <ul>
@@ -413,10 +632,11 @@
                     </ul>
                 </div>
                 <p class="note">
-                    For the DofE role, I understand that creating accessible documentation is essential, especially given
-                            the role description mentions "accessibility tools to promote inclusivity." I would ensure
-                            all documentation follows WCAG guidelines and is usable by staff with diverse needs and
-                            abilities.
+                    For the DofE role, I understand that creating accessible documentation is essential, especially
+                    given
+                    the role description mentions "accessibility tools to promote inclusivity." I would ensure
+                    all documentation follows WCAG guidelines and is usable by staff with diverse needs and
+                    abilities.
                 </p>
             </section>
 
@@ -459,6 +679,79 @@
                         <li><strong>Interactive elements</strong> — Expandable sections, tabs, or interactive examples
                             can help manage complex information.</li>
                     </ul>
+                </div>
+            </section>
+
+            <section class="panel" id="quality">
+                <h2>Quality Assurance: Poka-Yoke, TDD & AI</h2>
+                <p>
+                    I treat documentation quality with the same rigour as software delivery. By combining poka-yoke
+                    (mistake proofing), test-driven development workflows, and AI-assisted checks, I can ensure that
+                    every artefact is accurate, accessible, and behaves as expected.
+                </p>
+
+                <div class="cards-grid" style="margin-bottom: 2rem; grid-template-columns: 1fr;">
+                    <article class="card">
+                        <h3>Poka-Yoke for Documentation</h3>
+                        <ul>
+                            <li><strong>Structured templates:</strong> Use pre-approved templates with mandatory fields
+                                (purpose, audience, prerequisites, steps, screenshots) so critical content isn't
+                                forgotten.</li>
+                            <li><strong>Linting & style rules:</strong> Enforce heading hierarchy, terminology, and
+                                accessibility reminders (alt text, ARIA notes) via markdown/HTML linters.</li>
+                            <li><strong>Form controls:</strong> When using CMS forms, add validation to stop publishing
+                                if links are broken, screenshots missing, or review sign-off unchecked.</li>
+                            <li><strong>Contextual checklists:</strong> Embed checklists within authoring tools (e.g.,
+                                "Have you tested the steps?" "Is the UI version current?").</li>
+                        </ul>
+                    </article>
+                    <article class="card">
+                        <h3>Test-Driven Documentation Workflows</h3>
+                        <ul>
+                            <li><strong>Executable steps:</strong> Write acceptance criteria for the guide (e.g., "If I
+                                follow steps 1-5, I should see X screen"). Run those steps before publishing.</li>
+                            <li><strong>Automation hooks:</strong> Use CI pipelines to run link checkers, spell
+                                checkers, and accessibility scans on every merge request.</li>
+                            <li><strong>Living examples:</strong> Pair documentation with automated UI tests
+                                (Playwright/Cypress). If a flow changes, tests fail, signalling which docs to update.
+                            </li>
+                            <li><strong>Version assertions:</strong> Add metadata tags (system version, release date).
+                                Failing tests remind us when a doc references an outdated build.</li>
+                        </ul>
+                    </article>
+                    <article class="card">
+                        <h3>AI-Assisted Quality Control</h3>
+                        <ul>
+                            <li><strong>Content validation:</strong> Use AI to compare instructions with system metadata
+                                (field names, labels) to highlight mismatches.</li>
+                            <li><strong>Readability scoring:</strong> Run AI-based readability and tone analysis to
+                                ensure content matches our plain-English standards.</li>
+                            <li><strong>Persona-based walkthroughs:</strong> Prompt AI to role-play different users (new
+                                volunteer, experienced leader) and flag confusing steps.</li>
+                            <li><strong>Automated summaries:</strong> Generate executive summaries or tooltips from
+                                long-form docs, guaranteeing consistent messaging across channels.</li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="card" style="background: #f8fbff;">
+                    <h3>End-to-End Safeguards</h3>
+                    <p>
+                        By combining these approaches, I can create a closed-loop system:
+                    </p>
+                    <ol>
+                        <li><strong>Authors</strong> use guided templates (poka-yoke) so content starts off correct.
+                        </li>
+                        <li><strong>CI pipelines</strong> run automated tests (TDD mindset) before publishing.</li>
+                        <li><strong>AI audits</strong> continuously review published content for drift, accessibility,
+                            or clarity issues.</li>
+                        <li><strong>Alerts and dashboards</strong> highlight any failures so fixes are prioritised
+                            alongside product changes.</li>
+                    </ol>
+                    <p>
+                        This ensures documentation doesn't lag behind system changes and remains trustworthy for
+                        everyone delivering the DofE programme.
+                    </p>
                 </div>
             </section>
 
@@ -546,9 +839,9 @@
                 </div>
                 <p class="note">
                     For the DofE role, I would consider the organisation's existing tools and platforms. Given the
-                            mention of Microsoft 365 in the role description, I might leverage SharePoint, Teams, or
-                            OneNote for collaborative documentation, while ensuring content is accessible and follows
-                            established standards.
+                    mention of Microsoft 365 in the role description, I might leverage SharePoint, Teams, or
+                    OneNote for collaborative documentation, while ensuring content is accessible and follows
+                    established standards.
                 </p>
             </section>
         </main>
