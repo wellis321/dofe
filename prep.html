@@ -28,7 +28,7 @@
             <p class="eyebrow">Prep Plan</p>
             <h1>Daily habits, resources, and logistics</h1>
             <p class="lead">
-                Keep your prep structured with short daily tasks, rehearsal rhythms, and quick references to the
+                Keep my prep structured with short daily tasks, rehearsal rhythms, and quick references to the
                 resources you already have.
             </p>
         </div>
@@ -46,37 +46,44 @@
         <main class="main-with-sidebar">
             <section class="panel" id="checklist">
                 <h2>Preparation checklist</h2>
-            <ol class="plan">
-                <li>Daily reading: spend at least 10 minutes on DofE news or strategy updates so the mission stays
-                    fresh.</li>
-                <li>Answer rehearsal: record yourself answering each question, then refine for clarity, pacing, and
-                    impact.</li>
-                <li>Draft a knowledge audit: outline how you would catalogue current docs, flag gaps, and propose quick
-                    wins.</li>
-                <li>Create visual cues: print or pin a cheat sheet with mission statements, role highlights, and
-                    interview logistics.</li>
-                <li>Logistics check: test the Teams link, confirm microphone/camera, and prepare a backup device or
-                    phone.</li>
-            </ol>
+                <ol class="plan">
+                    <li>Daily reading: spend at least 10 minutes on DofE news or strategy updates so the mission stays
+                        fresh.</li>
+                    <li>Answer rehearsal: record yourself answering each question, then refine for clarity, pacing, and
+                        impact.</li>
+                    <li>Draft a knowledge audit: outline how you would catalogue current docs, flag gaps, and propose
+                        quick
+                        wins.</li>
+                    <li>Create visual cues: print or pin a cheat sheet with mission statements, role highlights, and
+                        interview logistics.</li>
+                    <li>Logistics check: test the Teams link, confirm microphone/camera, and prepare a backup device or
+                        phone.</li>
+                </ol>
             </section>
 
             <section class="panel" id="resources">
                 <h2>Supporting resources</h2>
-            <div class="resources">
-                <ul>
-                    <li><a href="cv.txt" target="_blank">CV insights</a> — reuse examples when answering questions to
-                        show measurable outcomes.</li>
-                    <li><a href="overview.txt" target="_blank">Original briefing</a> — revisit responsibilities,
-                        benefits, and interview details.</li>
-                    <li>Note the technologies you regularly train/mentor on (Microsoft 365, Dynamics, bespoke
-                        platforms).</li>
-                    <li>Keep this site open in a browser tab so you can refresh answers, questions, or traits at any
-                        time.</li>
-                </ul>
-            </div>
+                <div class="resources">
+                    <ul>
+                        <li><a href="cv.txt" target="_blank">CV insights</a> — reuse examples when answering questions
+                            to
+                            show measurable outcomes.</li>
+                        <li><a href="overview.txt" target="_blank">Original briefing</a> — revisit responsibilities,
+                            benefits, and interview details.</li>
+                        <li>Note the technologies you regularly train/mentor on (Microsoft 365, Dynamics, bespoke
+                            platforms).</li>
+                        <li>Keep this site open in a browser tab so you can refresh answers, questions, or traits at any
+                            time.</li>
+                    </ul>
+                </div>
             </section>
         </main>
     </div>
+
+    <button id="back-to-top" class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+        aria-label="Back to top">
+        ↑
+    </button>
 
     <footer class="site-footer">
         <div class="footer-content">
@@ -124,6 +131,18 @@
             <p>&copy; 2025 William Ellis | Interview Prep Site</p>
         </div>
     </footer>
+
+    <script>
+        // Show/hide back to top button based on scroll position
+        window.addEventListener('scroll', function () {
+            const backToTopButton = document.getElementById('back-to-top');
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+    </script>
 </body>
 
 </html>

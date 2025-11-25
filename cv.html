@@ -385,6 +385,10 @@
         </main>
     </div>
 
+    <button id="back-to-top" class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" aria-label="Back to top">
+        ↑
+    </button>
+
     <footer class="site-footer">
         <div class="footer-content">
             <div class="footer-column">
@@ -431,6 +435,18 @@
             <p>&copy; 2025 William Ellis | Interview Prep Site</p>
         </div>
     </footer>
+
+    <script>
+        // Show/hide back to top button based on scroll position
+        window.addEventListener('scroll', function() {
+            const backToTopButton = document.getElementById('back-to-top');
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+    </script>
 </body>
 
 </html>

@@ -207,13 +207,22 @@
                                     rather than all at once to minimise disruption.</p>
                             </div>
                             <div class="card">
-                                <h4>Content transformation using "Everybody First"</h4>
-                                <p>Apply my "Everybody First" design system during migration: start with the most
-                                    accessible version as the foundation, using clear structure, plain language, and
-                                    full compatibility. Users who want enhanced styling can opt-in, but everyone gets a
-                                    fully functional, beautiful experience from the first interaction - ensuring DofE's
-                                    diverse volunteer network can access information regardless of their technical
-                                    abilities.</p>
+                                <h4>Real Example: Consolidating Distributed Documentation</h4>
+                                <p><strong>Context:</strong> I understand that eDofE currently has distributed
+                                    documentation - various Licensed Organisations (schools, local authorities, youth
+                                    groups) create their own PDF guides for participants, like the <a
+                                        href="https://jghsdofe.co.uk/file/gold/eDofE-guide.pdf" target="_blank">Gold
+                                        Award guide from JGHS</a>. This creates inconsistency and accessibility issues.
+                                </p>
+                                <p><strong>Action:</strong> I would apply my "Everybody First" design system to create
+                                    centralised, accessible documentation that Licensed Organisations could customise
+                                    while maintaining core consistency. Start with the most accessible version as the
+                                    foundation, allowing organisations to add their branding while ensuring all users
+                                    get a fully functional experience.</p>
+                                <p><strong>Outcome:</strong> This would eliminate the current fragmented approach,
+                                    ensure WCAG compliance across all documentation, and provide DofE's diverse
+                                    volunteer network with consistent, accessible information regardless of their
+                                    Licensed Organisation or technical abilities.</p>
                             </div>
                             <div class="card">
                                 <h4>Metadata and tagging</h4>
@@ -462,6 +471,23 @@
             </section>
         </main>
     </div>
+
+    <button id="back-to-top" class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+        aria-label="Back to top">
+        ↑
+    </button>
+
+    <script>
+        // Show/hide back to top button based on scroll position
+        window.addEventListener('scroll', function () {
+            const backToTopButton = document.getElementById('back-to-top');
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+    </script>
 
     <footer class="site-footer">
         <div class="footer-content">
