@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
     <title>Second Interview</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
@@ -12,16 +13,38 @@
     <header class="site-header">
         <nav class="navbar">
             <a class="logo" href="index.html">DofE Prep</a>
+            <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-overlay"></div>
             <div class="nav-links">
                 <a href="index.html" class="nav-link">Home</a>
-                <a href="organisation.html" class="nav-link">Organisation</a>
-                <a href="projects.html" class="nav-link">Projects</a>
-                <a href="role.html" class="nav-link">Role</a>
-                <a href="prep.html" class="nav-link">Prep</a>
-                <a href="documentation.html" class="nav-link">Documentation</a>
-                <a href="cv.html" class="nav-link">CV</a>
-                <a href="training.html" class="nav-link">Training</a>
-                <a href="second-interview.html" class="nav-link active" aria-current="page">Second Interview</a>
+                <div class="nav-group">
+                    <button class="nav-group-toggle" aria-expanded="false">About DofE</button>
+                    <div class="nav-group-menu">
+                        <a href="organisation.html" class="nav-group-link">Organisation</a>
+                        <a href="projects.html" class="nav-group-link">Projects</a>
+                        <a href="role.html" class="nav-group-link">Role</a>
+                    </div>
+                </div>
+                <div class="nav-group">
+                    <button class="nav-group-toggle" aria-expanded="false">Preparation</button>
+                    <div class="nav-group-menu">
+                        <a href="prep.html" class="nav-group-link">Prep</a>
+                        <a href="documentation.html" class="nav-group-link">Documentation</a>
+                        <a href="cv.html" class="nav-group-link">CV</a>
+                        <a href="training.html" class="nav-group-link">Training</a>
+                    </div>
+                </div>
+                <div class="nav-group">
+                    <button class="nav-group-toggle active" aria-expanded="true">Interview Phase</button>
+                    <div class="nav-group-menu">
+                        <a href="second-interview.html" class="nav-group-link active">Second Interview</a>
+                        <a href="training-session.html" class="nav-group-link">Training Session</a>
+                    </div>
+                </div>
             </div>
         </nav>
         <div class="hero">
@@ -42,6 +65,7 @@
                 <a href="#agenda" class="side-nav-link">Interview Agenda</a>
                 <a href="#confirmation" class="side-nav-link">Interview Confirmation</a>
                 <a href="#preparation" class="side-nav-link">Preparation Notes</a>
+                <a href="training-session.html" class="side-nav-link">Full Training Session Plan →</a>
             </nav>
         </aside>
 
@@ -61,6 +85,9 @@
                     <p>
                         <strong>Note:</strong> A separate email was sent shortly after outlining the task and agenda for
                         the second interview.
+                    </p>
+                    <p>
+                        <strong>Full Training Session Plan:</strong> I've created a comprehensive training session plan with detailed slide deck outlines, quick reference guides, checklists, and email templates. You can view the complete plan on the <a href="training-session.html">Training Session</a> page.
                     </p>
                 </div>
             </section>
@@ -90,86 +117,20 @@
                     <p>
                         This task aligns perfectly with my experience in delivering accessible, beginner-friendly training.
                         Given that the audience are digital novices who have never used social platforms before, I'll use a
-                        hands-on, safety-first approach:
+                        hands-on, safety-first approach with three pre-created Twitter test accounts for practice.
                     </p>
-                    <h4>Pre-Session Preparation</h4>
+                    <p>
+                        My approach focuses on:
+                    </p>
                     <ul>
-                        <li><strong>Create three test accounts on Twitter</strong> - I'll set up practice accounts beforehand
-                            that participants can use during the session</li>
-                        <li><strong>Prepare visual examples</strong> - Screenshots and screen recordings showing the login
-                            process step-by-step</li>
-                        <li><strong>Create phishing email examples</strong> - Visual examples of fake emails designed to look
-                            like legitimate platform communications</li>
+                        <li><strong>Security awareness from day one</strong> - Teaching phishing recognition before account creation</li>
+                        <li><strong>Control and safety</strong> - Empowering users with privacy settings, blocking, and content controls</li>
+                        <li><strong>Low-pressure learning</strong> - Using test accounts removes fear of making mistakes</li>
+                        <li><strong>Accessibility-first</strong> - Clear language, step-by-step instructions, visual demonstrations</li>
                     </ul>
-                    <h4>Session Structure (10 minutes)</h4>
-                    <ol>
-                        <li><strong>Introduction & Safety First (2 minutes)</strong>
-                            <ul>
-                                <li>Explain what social media is in simple terms</li>
-                                <li>Introduce the concept of security and why it matters</li>
-                                <li>Show examples of phishing emails that look like legitimate Twitter emails (e.g.,
-                                    "twitter-support@twittter.com" vs "support@twitter.com")</li>
-                                <li>Teach them to check email addresses carefully before clicking links</li>
-                            </ul>
-                        </li>
-                        <li><strong>Hands-On Practice with Test Accounts (5 minutes)</strong>
-                            <ul>
-                                <li>Share the three pre-created test account credentials</li>
-                                <li>Guide participants through logging in using screen sharing</li>
-                                <li>Let them practice logging in themselves using the test accounts</li>
-                                <li>This removes the pressure of creating their own account immediately and lets them
-                                    experience the platform safely</li>
-                                <li>Demonstrate common issues: forgotten passwords, email verification, account locked
-                                    messages</li>
-                                <li><strong>Key Settings Overview</strong> - Once logged in, show them essential settings:
-                                    <ul>
-                                        <li><strong>Profile management</strong> - Brief overview of their profile and how to
-                                            edit it (name, bio, profile picture)</li>
-                                        <li><strong>Disable automatic video playing</strong> - Show them how to turn off
-                                            autoplay to:
-                                            <ul>
-                                                <li>Avoid seeing potentially distressing content</li>
-                                                <li>Save data usage on mobile devices</li>
-                                            </ul>
-                                        </li>
-                                        <li><strong>Privacy settings</strong> - Explain how to set their account to private
-                                            if they prefer to control who can see their content</li>
-                                        <li><strong>Blocking users</strong> - Show them how to block people if they feel
-                                            uncomfortable or receive unwanted contact</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><strong>Creating Your Own Account (2 minutes)</strong>
-                            <ul>
-                                <li>Brief overview of the account creation process</li>
-                                <li>Emphasise security: strong passwords, email verification, two-factor authentication
-                                    (explained simply)</li>
-                                <li>Remind them to be suspicious of emails asking for login details</li>
-                            </ul>
-                        </li>
-                        <li><strong>Q&A and Next Steps (1 minute)</strong>
-                            <ul>
-                                <li>Address any questions</li>
-                                <li>Provide resources for further learning</li>
-                            </ul>
-                        </li>
-                    </ol>
-                    <h4>Key Teaching Points</h4>
-                    <ul>
-                        <li><strong>Security awareness from day one</strong> - Teaching them to recognise phishing attempts
-                            before they even create an account</li>
-                        <li><strong>Control and safety</strong> - Empowering them with knowledge of privacy settings, blocking,
-                            and content controls (autoplay) so they feel in control of their experience</li>
-                        <li><strong>Data awareness</strong> - Teaching them about data usage and how to manage it (disabling
-                            autoplay saves data and prevents unexpected content)</li>
-                        <li><strong>Low-pressure learning</strong> - Using test accounts removes the fear of making mistakes
-                            on their own accounts</li>
-                        <li><strong>Visual learning</strong> - Screen sharing and examples help digital novices understand
-                            what they're looking at</li>
-                        <li><strong>Accessibility</strong> - Clear language, step-by-step instructions, and opportunities to
-                            practice at their own pace</li>
-                    </ul>
+                    <p>
+                        <strong>For the complete detailed training plan, session structure, slide deck outline, and all preparation materials, see the <a href="training-session.html">Training Session</a> page.</strong>
+                    </p>
                 </div>
             </section>
 
@@ -256,45 +217,13 @@
                 </div>
                 <div class="card">
                     <h3>Training Session Preparation</h3>
-                    <ul>
-                        <li><strong>Create three test accounts on Twitter/X</strong> - Set up practice accounts with simple
-                            usernames and passwords that participants can use during the session</li>
-                        <li><strong>Prepare phishing email examples</strong> - Create visual examples showing:
-                            <ul>
-                                <li>Legitimate Twitter emails (e.g., support@twitter.com)</li>
-                                <li>Fake phishing emails (e.g., support@twittter.com, twitter-security@email-twitter.com)
-                                </li>
-                                <li>Highlight the differences and teach them what to look for</li>
-                            </ul>
-                        </li>
-                        <li><strong>Prepare clear visual aids</strong> - Screenshots and screen recordings showing:
-                            <ul>
-                                <li>Step-by-step login process</li>
-                                <li>Common error messages and how to resolve them</li>
-                                <li>Account creation process</li>
-                                <li>Profile editing interface</li>
-                                <li>Settings menu location and how to disable autoplay videos</li>
-                                <li>Privacy settings and how to set account to private</li>
-                                <li>How to block users</li>
-                            </ul>
-                        </li>
-                        <li><strong>Practice timing</strong> - Rehearse the 10-minute session to ensure it fits within the
-                            allocated time</li>
-                        <li><strong>Prepare for questions</strong> - Anticipate questions from digital novices about:
-                            <ul>
-                                <li>What is social media?</li>
-                                <li>Why do I need to verify my email?</li>
-                                <li>What if I forget my password?</li>
-                                <li>How do I know if an email is real?</li>
-                                <li>How do I change my profile picture?</li>
-                                <li>What does "private account" mean?</li>
-                                <li>What happens when I block someone?</li>
-                                <li>Why should I turn off autoplay videos?</li>
-                            </ul>
-                        </li>
-                        <li><strong>Accessibility considerations</strong> - Ensure all visual examples are clear, use simple
-                            language, and can be understood by people with varying levels of digital literacy</li>
-                    </ul>
+                    <p>
+                        Key preparation tasks include creating three test Twitter accounts, preparing phishing email examples,
+                        visual aids (screenshots and screen recordings), practicing timing, and preparing for common questions.
+                    </p>
+                    <p>
+                        <strong>For detailed preparation checklists, visual asset requirements, accessibility considerations, and complete preparation timeline, see the <a href="training-session.html">Training Session</a> page.</strong>
+                    </p>
                 </div>
                 <div class="card">
                     <h3>Remote Working Discussion Points</h3>
@@ -347,6 +276,7 @@
                     <li><a href="cv.html">CV</a></li>
                     <li><a href="training.html">Training</a></li>
                     <li><a href="second-interview.html">Second Interview</a></li>
+                    <li><a href="training-session.html">Training Session</a></li>
                 </ul>
             </div>
             <div class="footer-column">
@@ -381,6 +311,87 @@
             } else {
                 backToTopButton.classList.remove('visible');
             }
+        });
+
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        const navOverlay = document.querySelector('.nav-overlay');
+
+        if (menuToggle) {
+            menuToggle.addEventListener('click', function() {
+                const isActive = navLinks.classList.toggle('active');
+                menuToggle.classList.toggle('active');
+                menuToggle.setAttribute('aria-expanded', isActive);
+                if (navOverlay) {
+                    navOverlay.classList.toggle('active');
+                }
+            });
+        }
+
+        // Close menu when clicking overlay
+        if (navOverlay) {
+            navOverlay.addEventListener('click', function() {
+                navLinks.classList.remove('active');
+                menuToggle.classList.remove('active');
+                menuToggle.setAttribute('aria-expanded', 'false');
+                navOverlay.classList.remove('active');
+            });
+        }
+
+        // Nav group toggle
+        const navGroups = document.querySelectorAll('.nav-group');
+        navGroups.forEach(group => {
+            const toggle = group.querySelector('.nav-group-toggle');
+            if (toggle) {
+                toggle.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const isActive = group.classList.toggle('active');
+                    toggle.setAttribute('aria-expanded', isActive);
+                    // Close other groups
+                    navGroups.forEach(otherGroup => {
+                        if (otherGroup !== group) {
+                            otherGroup.classList.remove('active');
+                            const otherToggle = otherGroup.querySelector('.nav-group-toggle');
+                            if (otherToggle) {
+                                otherToggle.setAttribute('aria-expanded', 'false');
+                            }
+                        }
+                    });
+                });
+            }
+        });
+
+        // Close menu when clicking a nav link (mobile)
+        const navLinkElements = document.querySelectorAll('.nav-link, .nav-group-link');
+        navLinkElements.forEach(link => {
+            link.addEventListener('click', function() {
+                if (window.innerWidth <= 768) {
+                    navLinks.classList.remove('active');
+                    menuToggle.classList.remove('active');
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                    if (navOverlay) {
+                        navOverlay.classList.remove('active');
+                    }
+                }
+            });
+        });
+
+        // Set active state for nav group links
+        const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+        navGroups.forEach(group => {
+            const links = group.querySelectorAll('.nav-group-link');
+            links.forEach(link => {
+                const linkPath = link.getAttribute('href');
+                if (linkPath === currentPath || (currentPath === '' && linkPath === 'index.html')) {
+                    link.classList.add('active');
+                    group.classList.add('active');
+                    const toggle = group.querySelector('.nav-group-toggle');
+                    if (toggle) {
+                        toggle.classList.add('active');
+                    }
+                }
+            });
         });
     </script>
 </body>

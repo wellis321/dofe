@@ -1,0 +1,56 @@
+Logging into Instagram
+Quick Reference Guide for Complete Beginners
+What You Need Before Starting
+✓ A device connected to the internet (phone, tablet, or computer)
+✓ Your Instagram username or email address
+✓ Your password
+Step-by-Step Login Instructions
+STEP 1: Find Instagram
+    • • On a phone/tablet: Open your app store and search for 'Instagram'
+    • • On a computer: Open your web browser and go to www.instagram.com
+STEP 2: Open Instagram
+    • • Look for the Instagram logo (a colorful camera icon)
+    • • Tap or click on it to open
+STEP 3: Find the Login Button
+    • • You'll see a 'Log In' button near the bottom of the screen
+    • • Tap or click this button
+STEP 4: Enter Your Details
+    • • Type your username or email in the first box
+    • • Type your password in the second box (you'll see dots instead of letters)
+    • • This is normal - it keeps your password private!
+STEP 5: Click 'Log In'
+    • • Tap or click the blue 'Log In' button
+    • • Wait a moment while Instagram checks your details
+    • • You're in! You'll see your Instagram feed
+Common Problems and Solutions
+❌ PROBLEM: "I've forgotten my password"
+✓ SOLUTION:
+    • 1. On the login screen, tap 'Forgot Password?'
+    • 2. Enter your email address or username
+    • 3. Instagram will send you an email with a link
+    • 4. Check your email inbox
+    • 5. Click the link in the email to create a new password
+❌ PROBLEM: "It says my username or password is incorrect"
+✓ SOLUTION:
+    • 1. Check your Caps Lock key isn't on (passwords are case-sensitive)
+    • 2. Make sure you're typing carefully - no extra spaces
+    • 3. Try clicking the 'eye' icon to see your password as you type
+    • 4. If still stuck, use 'Forgot Password' to reset it
+❌ PROBLEM: "Instagram is asking for a security code"
+✓ SOLUTION:
+    • 1. This is Instagram's way of protecting your account - it's a good thing!
+    • 2. Check your phone for a text message or your email
+    • 3. You'll receive a 6-digit code
+    • 4. Type this code into Instagram
+    • 5. Click 'Confirm' and you'll be logged in
+Important Safety Tips
+🔒 NEVER share your password with anyone - not even family or friends
+🔒 Make your password strong: use a mix of letters, numbers, and symbols
+🔒 Always log out when using a shared computer or device
+🔒 Be suspicious of emails asking for your Instagram password - Instagram will never ask for it by email
+🔒 If something feels wrong, it probably is - trust your instincts
+Need More Help?
+Instagram Help Center: help.instagram.com
+Training Resources: Visit https://wellis321.github.io/dofe/ for video tutorials
+Contact Your Trainer: William Ellis - williamjamesellis@outlook.com
+Remember: Everyone was a beginner once. Take your time, and don't be afraid to ask for help!
