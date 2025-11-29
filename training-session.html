@@ -36,7 +36,6 @@
                         <a href="documentation.html" class="nav-group-link">Documentation</a>
                         <a href="cv.html" class="nav-group-link">CV</a>
                         <a href="training.html" class="nav-group-link">Training</a>
-                        <a href="xapi-course-integration.html" class="nav-group-link">xAPI Course</a>
                     </div>
                 </div>
                 <div class="nav-group">
@@ -44,6 +43,7 @@
                     <div class="nav-group-menu">
                         <a href="second-interview.html" class="nav-group-link">Second Interview</a>
                         <a href="training-session.html" class="nav-group-link active">Training Session</a>
+                        <a href="xapi-course-integration.html" class="nav-group-link">xAPI Course</a>
                     </div>
                 </div>
             </div>
@@ -829,10 +829,11 @@
             }
         });
 
-        // Close menu when clicking a nav link (mobile)
+        // Close menu when clicking a nav link
         const navLinkElements = document.querySelectorAll('.nav-link, .nav-group-link');
         navLinkElements.forEach(link => {
             link.addEventListener('click', function() {
+                // Close mobile menu
                 if (window.innerWidth <= 768) {
                     navLinks.classList.remove('active');
                     menuToggle.classList.remove('active');
@@ -841,7 +842,33 @@
                         navOverlay.classList.remove('active');
                     }
                 }
+                // Close nav group menus when clicking a link
+                navGroups.forEach(group => {
+                    group.classList.remove('active');
+                    const toggle = group.querySelector('.nav-group-toggle');
+                    if (toggle) {
+                        toggle.setAttribute('aria-expanded', 'false');
+                        toggle.classList.remove('active');
+                    }
+                });
             });
+        });
+
+        // Close nav group menus when clicking outside
+        document.addEventListener('click', function(e) {
+            const isClickInsideNav = e.target.closest('.nav-group');
+            const isClickOnToggle = e.target.closest('.nav-group-toggle');
+
+            if (!isClickInsideNav && !isClickOnToggle) {
+                navGroups.forEach(group => {
+                    group.classList.remove('active');
+                    const toggle = group.querySelector('.nav-group-toggle');
+                    if (toggle) {
+                        toggle.setAttribute('aria-expanded', 'false');
+                        toggle.classList.remove('active');
+                    }
+                });
+            }
         });
 
         // Set active state for nav group links
