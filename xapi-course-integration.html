@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>xAPI Course & Microsoft Integration</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar">
+            <a class="logo" href="index.html">DofE Prep</a>
+            <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-overlay"></div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <div class="nav-group">
+                    <button class="nav-group-toggle" aria-expanded="false">About DofE</button>
+                    <div class="nav-group-menu">
+                        <a href="organisation.html" class="nav-group-link">Organisation</a>
+                        <a href="projects.html" class="nav-group-link">Projects</a>
+                        <a href="role.html" class="nav-group-link">Role</a>
+                    </div>
+                </div>
+                <div class="nav-group">
+                    <button class="nav-group-toggle active" aria-expanded="true">Preparation</button>
+                    <div class="nav-group-menu">
+                        <a href="prep.html" class="nav-group-link">Prep</a>
+                        <a href="documentation.html" class="nav-group-link">Documentation</a>
+                        <a href="cv.html" class="nav-group-link">CV</a>
+                        <a href="training.html" class="nav-group-link">Training</a>
+                        <a href="xapi-course-integration.html" class="nav-group-link active">xAPI Course</a>
+                    </div>
+                </div>
+                <div class="nav-group">
+                    <button class="nav-group-toggle" aria-expanded="false">Interview Phase</button>
+                    <div class="nav-group-menu">
+                        <a href="second-interview.html" class="nav-group-link">Second Interview</a>
+                        <a href="training-session.html" class="nav-group-link">Training Session</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="hero">
+            <p class="eyebrow">Interactive Training & Microsoft Integration</p>
+            <h1>xAPI Course & Digital Resources</h1>
+            <p class="lead">
+                Interactive Twitter training course with xAPI tracking, Microsoft 365 integration options, and automated
+                certificate delivery.
+            </p>
+        </div>
+    </header>
+
+    <div class="content-wrapper">
+        <aside class="sidebar-nav">
+            <nav class="side-nav">
+                <strong class="side-nav-title">Contents</strong>
+                <a href="#overview" class="side-nav-link">Overview</a>
+                <a href="#xapi-course" class="side-nav-link">xAPI Course</a>
+                <a href="#microsoft-integration" class="side-nav-link">Microsoft Integration</a>
+                <a href="#certificate-automation" class="side-nav-link">Certificate Automation</a>
+                <a href="#implementation" class="side-nav-link">Implementation Guide</a>
+            </nav>
+        </aside>
+
+        <main class="main-with-sidebar">
+            <section class="panel" id="overview">
+                <h2>Overview</h2>
+                <p>
+                    This page demonstrates an integrated approach to digital training delivery, combining interactive
+                    xAPI-enabled courses with Microsoft 365 tools for enhanced learning management and automated
+                    certificate distribution.
+                </p>
+                <div class="cards-grid" style="margin-top: 2rem;">
+                    <div class="card">
+                        <h3>Interactive xAPI Course</h3>
+                        <ul>
+                            <li><strong>Full tracking:</strong> Learner progress, time spent, quiz performance</li>
+                            <li><strong>Compliance ready:</strong> Completion data for reporting</li>
+                            <li><strong>Self-paced:</strong> Works in Teams, browsers, mobile devices</li>
+                            <li><strong>No LMS required:</strong> Single HTML file deployment</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>Microsoft 365 Integration</h3>
+                        <ul>
+                            <li><strong>Microsoft Lists:</strong> Track completions, manage learner data</li>
+                            <li><strong>Microsoft SWAY:</strong> Enhanced course presentation and delivery</li>
+                            <li><strong>Power Automate:</strong> Automate workflows and notifications</li>
+                            <li><strong>SharePoint:</strong> Centralised resource hosting</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>Automated Certificates</h3>
+                        <ul>
+                            <li><strong>Instant delivery:</strong> Certificates sent automatically on completion</li>
+                            <li><strong>Customisable:</strong> Branded with organisation details</li>
+                            <li><strong>Trackable:</strong> Integration with Microsoft Lists for records</li>
+                            <li><strong>Email delivery:</strong> Sent directly to learner's inbox</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="panel" id="xapi-course">
+                <h2>Interactive xAPI Course</h2>
+                <p>
+                    The Twitter Login Training course is a complete, interactive learning experience featuring xAPI
+                    (Experience API) tracking for comprehensive learning analytics.
+                </p>
+
+                <div class="card" style="margin: 2rem 0;">
+                    <h3>Course Features</h3>
+                    <ul>
+                        <li><strong>9 Progressive Sections:</strong> Welcome → Login → Problems → Privacy → Safety →
+                            Quiz → Certificate</li>
+                        <li><strong>Interactive Quiz:</strong> 5 questions with instant feedback, 80% pass rate required
+                        </li>
+                        <li><strong>Progress Tracking:</strong> Visual progress bar showing completion status</li>
+                        <li><strong>Completion Certificate:</strong> Automatic certificate generation upon successful
+                            completion</li>
+                        <li><strong>Mobile Responsive:</strong> Works seamlessly on phones, tablets, and computers</li>
+                        <li><strong>Accessibility:</strong> WCAG-compliant design with clear language and visual
+                            indicators</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="margin: 2rem 0;">
+                    <h3>What is xAPI?</h3>
+                    <p>
+                        xAPI (Experience API, formerly Tin Can API) is the modern standard for tracking learning
+                        experiences. Unlike traditional systems that only record completion, xAPI tracks detailed
+                        interactions:
+                    </p>
+                    <ul>
+                        <li>Which sections learners viewed and for how long</li>
+                        <li>Quiz performance and specific question responses</li>
+                        <li>Time spent in each section</li>
+                        <li>Navigation patterns and learning paths</li>
+                        <li>Completion status and scores</li>
+                    </ul>
+                    <p style="margin-top: 1rem;">
+                        This data is sent to a Learning Record Store (LRS) where it can be analyzed to improve training
+                        effectiveness and provide compliance reporting.
+                    </p>
+                </div>
+
+                <div class="card"
+                    style="margin: 2rem 0; background: linear-gradient(135deg, #1DA1F2 0%, #14171A 100%); color: white; padding: 2rem;">
+                    <h3 style="color: white;">Try the Course</h3>
+                    <p style="margin-bottom: 1.5rem;">
+                        Experience the interactive Twitter Login Training course. This demonstrates the full learning
+                        experience with xAPI tracking enabled.
+                    </p>
+                    <a href="twitter-training-xapi.html" target="_blank"
+                        style="display: inline-block; background: white; color: #1DA1F2; padding: 1rem 2rem; border-radius: 50px; text-decoration: none; font-weight: bold; transition: transform 0.3s;">
+                        Launch Interactive Course →
+                    </a>
+                </div>
+
+                <div class="card" style="margin: 2rem 0;">
+                    <h3>Deployment Options</h3>
+                    <ul>
+                        <li><strong>SharePoint:</strong> Upload HTML file to SharePoint document library, share link
+                        </li>
+                        <li><strong>Microsoft Teams:</strong> Add as a tab in Teams channel or embed in Teams meeting
+                        </li>
+                        <li><strong>Email:</strong> Send HTML file directly or link to hosted version</li>
+                        <li><strong>Intranet:</strong> Host on organisation intranet or learning portal</li>
+                        <li><strong>GitHub Pages:</strong> Free hosting for public-facing courses</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="panel" id="microsoft-integration">
+                <h2>Microsoft 365 Integration</h2>
+                <p>
+                    Integrating the xAPI course with Microsoft 365 tools creates a comprehensive learning management
+                    ecosystem without requiring a separate LMS.
+                </p>
+
+                <div class="card" style="margin: 2rem 0;">
+                    <h3>Microsoft Lists - Completion Tracking</h3>
+                    <p>
+                        Microsoft Lists provides a powerful way to track course completions, manage learner data, and
+                        generate reports.
+                    </p>
+                    <h4>Setup Process:</h4>
+                    <ol>
+                        <li><strong>Create a List:</strong> In Microsoft 365, create a new List called "Course
+                            Completions"</li>
+                        <li><strong>Add Columns:</strong>
+                            <ul>
+                                <li>Learner Name (Person)</li>
+                                <li>Email Address (Single line of text)</li>
+                                <li>Course Name (Single line of text)</li>
+                                <li>Completion Date (Date)</li>
+                                <li>Quiz Score (Number)</li>
+                                <li>Time Spent (Number - minutes)</li>
+                                <li>Certificate Sent (Yes/No)</li>
+                                <li>Certificate Link (Hyperlink)</li>
+                            </ul>
+                        </li>
+                        <li><strong>Configure Views:</strong> Create views for "Recent Completions", "Pending
+                            Certificates", "Completion Reports"</li>
+                        <li><strong>Set Permissions:</strong> Configure who can view/edit the list</li>
+                    </ol>
+                    <h4>Integration with xAPI:</h4>
+                    <p>
+                        When a learner completes the course, the xAPI statement can trigger a Power Automate flow that:
+                    </p>
+                    <ul>
+                        <li>Adds a new row to the Microsoft List</li>
+                        <li>Records completion details (score, time, date)</li>
+                        <li>Triggers certificate generation</li>
+                        <li>Updates status fields</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="margin: 2rem 0;">
+                    <h3>Microsoft SWAY - Enhanced Presentation</h3>
+                    <p>
+                        Microsoft SWAY can be used to create an enhanced wrapper around the xAPI course, providing
+                        additional context, resources, and navigation.
+                    </p>
+                    <h4>Benefits of SWAY Integration:</h4>
+                    <ul>
+                        <li><strong>Rich Media:</strong> Add videos, images, and interactive content alongside the
+                            course</li>
+                        <li><strong>Branding:</strong> Customize appearance to match organisation branding</li>
+                        <li><strong>Navigation:</strong> Create a structured learning path with multiple resources</li>
+                        <li><strong>Mobile Optimized:</strong> SWAY automatically adapts to different screen sizes</li>
+                        <li><strong>Analytics:</strong> Track views and engagement through SWAY analytics</li>
+                    </ul>
+                    <h4>Implementation Approach:</h4>
+                    <ol>
+                        <li>Create a SWAY presentation with course introduction and overview</li>
+                        <li>Embed the xAPI course HTML file using an iframe or link</li>
+                        <li>Add supplementary resources (quick reference guides, videos, FAQs)</li>
+                        <li>Include links to Microsoft Lists for completion tracking</li>
+                        <li>Share SWAY link via Teams, email, or SharePoint</li>
+                    </ol>
+                </div>
+
+                <div class="card" style="margin: 2rem 0;">
+                    <h3>Power Automate - Workflow Automation</h3>
+                    <p>
+                        Power Automate connects the xAPI course completion events with Microsoft Lists and certificate
+                        generation.
+                    </p>
+                    <h4>Automation Flow:</h4>
+                    <ol>
+                        <li><strong>Trigger:</strong> xAPI completion statement received (via HTTP request or webhook)
+                        </li>
+                        <li><strong>Action 1:</strong> Add row to Microsoft Lists with completion data</li>
+                        <li><strong>Action 2:</strong> Generate certificate (using Power Automate or external service)
+                        </li>
+                        <li><strong>Action 3:</strong> Update Microsoft Lists with certificate link</li>
+                        <li><strong>Action 4:</strong> Send email with certificate attachment/link</li>
+                        <li><strong>Action 5:</strong> Update completion status in Lists</li>
+                        <li><strong>Action 6:</strong> Send notification to manager/trainer (optional)</li>
+                    </ol>
+                    <h4>Alternative: Manual Trigger</h4>
+                    <p>
+                        If direct xAPI integration isn't available, create a Power Automate flow triggered by:
+                    </p>
+                    <ul>
+                        <li>Form submission (Microsoft Forms)</li>
+                        <li>Manual button click in Microsoft Lists</li>
+                        <li>Scheduled check of completion data</li>
+                        <li>Email trigger (learner emails completion confirmation)</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="margin: 2rem 0;">
+                    <h3>SharePoint - Centralised Hosting</h3>
+                    <p>
+                        SharePoint serves as the central hub for all training resources and course materials.
+                    </p>
+                    <h4>SharePoint Structure:</h4>
+                    <ul>
+                        <li><strong>Document Library:</strong> Store xAPI course HTML files, quick reference guides,
+                            certificates</li>
+                        <li><strong>Pages:</strong> Create landing pages with course overview and links</li>
+                        <li><strong>Lists:</strong> Track completions, manage learner data</li>
+                        <li><strong>Site Collection:</strong> Dedicated training site with multiple courses</li>
+                    </ul>
+                    <h4>Benefits:</h4>
+                    <ul>
+                        <li>Single sign-on (SSO) integration</li>
+                        <li>Version control for course updates</li>
+                        <li>Permission management (who can access which courses)</li>
+                        <li>Search functionality across all training materials</li>
+                        <li>Integration with Microsoft Teams</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="panel" id="certificate-automation">
+                <h2>Automated Certificate Delivery</h2>
+                <p>
+                    Automatically generating and sending certificates upon course completion provides immediate
+                    recognition and maintains accurate completion records.
+                </p>
+
+                <div class="card" style="margin: 2rem 0;">
+                    <h3>Certificate Generation Options</h3>
+
+                    <h4>Option 1: Power Automate + HTML/CSS Certificate</h4>
+                    <p>
+                        Create a certificate template using HTML/CSS, then use Power Automate to generate PDF
+                        certificates.
+                    </p>
+                    <ul>
+                        <li><strong>Pros:</strong> Full control over design, no additional costs, integrates with
+                            Microsoft 365</li>
+                        <li><strong>Cons:</strong> Requires HTML/CSS knowledge, more complex setup</li>
+                        <li><strong>Best for:</strong> Organisations with Power Automate licenses and technical
+                            resources</li>
+                    </ul>
+                    <p><strong>Implementation:</strong></p>
+                    <ol>
+                        <li>Create HTML certificate template with placeholders (name, date, course, score)</li>
+                        <li>Use Power Automate "Convert HTML to PDF" action or Azure Function</li>
+                        <li>Store PDF in SharePoint or OneDrive</li>
+                        <li>Email certificate as attachment or share link</li>
+                    </ol>
+
+                    <h4>Option 2: Microsoft Word Template + Power Automate</h4>
+                    <p>
+                        Use a Word document template with mail merge fields, then automate PDF generation.
+                    </p>
+                    <ul>
+                        <li><strong>Pros:</strong> Easy to design, familiar tool, good for branding</li>
+                        <li><strong>Cons:</strong> Requires Word automation, may need additional tools</li>
+                        <li><strong>Best for:</strong> Organisations wanting professional Word-based certificates</li>
+                    </ul>
+                    <p><strong>Implementation:</strong></p>
+                    <ol>
+                        <li>Design certificate in Microsoft Word with merge fields</li>
+                        <li>Use Power Automate to populate fields from Microsoft Lists</li>
+                        <li>Convert Word to PDF using Power Automate or Azure Function</li>
+                        <li>Email or store certificate</li>
+                    </ol>
+
+                    <h4>Option 3: Third-Party Certificate Service</h4>
+                    <p>
+                        Use services like Credly, Accredible, or custom certificate APIs.
+                    </p>
+                    <ul>
+                        <li><strong>Pros:</strong> Professional appearance, verification features, blockchain options
+                        </li>
+                        <li><strong>Cons:</strong> Additional cost, external dependency</li>
+                        <li><strong>Best for:</strong> Organisations needing verified, shareable certificates</li>
+                    </ul>
+
+                    <h4>Option 4: Canvas/HTML5 Certificate Generator</h4>
+                    <p>
+                        Use JavaScript Canvas API to generate certificates dynamically in the browser.
+                    </p>
+                    <ul>
+                        <li><strong>Pros:</strong> No server required, instant generation, customisable</li>
+                        <li><strong>Cons:</strong> Requires JavaScript development, browser-based only</li>
+                        <li><strong>Best for:</strong> Simple certificates, immediate download</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="margin: 2rem 0;">
+                    <h3>Recommended Implementation: Power Automate Flow</h3>
+                    <p>
+                        Here's a step-by-step approach using Microsoft 365 tools:
+                    </p>
+                    <ol>
+                        <li><strong>Create Certificate Template:</strong>
+                            <ul>
+                                <li>Design HTML/CSS certificate with organisation branding</li>
+                                <li>Include placeholders: {{LearnerName}}, {{CourseName}}, {{CompletionDate}}, {{Score}}
+                                </li>
+                                <li>Store template in SharePoint</li>
+                            </ul>
+                        </li>
+                        <li><strong>Set Up Power Automate Flow:</strong>
+                            <ul>
+                                <li>Trigger: When item is created in Microsoft Lists (completion record)</li>
+                                <li>Get certificate template from SharePoint</li>
+                                <li>Replace placeholders with actual data</li>
+                                <li>Convert HTML to PDF (using Azure Function or third-party connector)</li>
+                                <li>Save PDF to SharePoint document library</li>
+                                <li>Update Microsoft Lists with certificate link</li>
+                                <li>Send email with certificate attachment</li>
+                            </ul>
+                        </li>
+                        <li><strong>Configure Email Template:</strong>
+                            <ul>
+                                <li>Professional email design</li>
+                                <li>Include certificate as attachment</li>
+                                <li>Add link to view certificate online</li>
+                                <li>Include next steps or additional resources</li>
+                            </ul>
+                        </li>
+                        <li><strong>Test and Deploy:</strong>
+                            <ul>
+                                <li>Test with sample completion</li>
+                                <li>Verify certificate generation</li>
+                                <li>Check email delivery</li>
+                                <li>Monitor for errors</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="card" style="margin: 2rem 0;">
+                    <h3>Certificate Content Recommendations</h3>
+                    <ul>
+                        <li><strong>Header:</strong> Organisation logo and name</li>
+                        <li><strong>Title:</strong> "Certificate of Completion" or "Certificate of Achievement"</li>
+                        <li><strong>Learner Name:</strong> Full name of the learner</li>
+                        <li><strong>Course Details:</strong> Course name, completion date, score (if applicable)</li>
+                        <li><strong>Verification:</strong> Unique certificate ID or QR code for verification</li>
+                        <li><strong>Footer:</strong> Trainer name, organisation details, validity information</li>
+                        <li><strong>Design:</strong> Professional, branded, suitable for printing</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="margin: 2rem 0;">
+                    <h3>Alternative: Manual Certificate Generation</h3>
+                    <p>
+                        If full automation isn't immediately available, a semi-automated approach can work:
+                    </p>
+                    <ul>
+                        <li><strong>Microsoft Lists View:</strong> Create a view showing "Completed - Certificate
+                            Pending"</li>
+                        <li><strong>Batch Processing:</strong> Weekly or daily review of completions</li>
+                        <li><strong>Template Use:</strong> Use mail merge in Word to generate certificates in bulk</li>
+                        <li><strong>Email Distribution:</strong> Send certificates via email or Teams</li>
+                        <li><strong>Status Update:</strong> Mark certificates as sent in Microsoft Lists</li>
+                    </ul>
+                    <p style="margin-top: 1rem;">
+                        This approach still provides efficiency while building toward full automation.
+                    </p>
+                </div>
+            </section>
+
+            <section class="panel" id="implementation">
+                <h2>Implementation Guide</h2>
+                <p>
+                    This section provides a practical roadmap for implementing the integrated training solution.
+                </p>
+
+                <div class="card" style="margin: 2rem 0;">
+                    <h3>Phase 1: Course Deployment (Week 1)</h3>
+                    <ol>
+                        <li>Upload xAPI course HTML file to SharePoint document library</li>
+                        <li>Test course functionality in different browsers and devices</li>
+                        <li>Configure xAPI endpoint (if using LRS) or set to demo mode</li>
+                        <li>Create shareable link for course access</li>
+                        <li>Test course completion flow</li>
+                    </ol>
+                </div>
+
+                <div class="card" style="margin: 2rem 0;">
+                    <h3>Phase 2: Microsoft Lists Setup (Week 1-2)</h3>
+                    <ol>
+                        <li>Create "Course Completions" Microsoft List</li>
+                        <li>Add required columns (name, email, course, date, score, etc.)</li>
+                        <li>Configure views for different purposes (all completions, pending certificates, reports)</li>
+                        <li>Set up permissions (who can view/edit)</li>
+                        <li>Test manual entry of completion record</li>
+                    </ol>
+                </div>
+
+                <div class="card" style="margin: 2rem 0;">
+                    <h3>Phase 3: Certificate Template Creation (Week 2)</h3>
+                    <ol>
+                        <li>Design certificate template (HTML/CSS or Word)</li>
+                        <li>Include organisation branding and required fields</li>
+                        <li>Test template with sample data</li>
+                        <li>Store template in SharePoint</li>
+                        <li>Create email template for certificate delivery</li>
+                    </ol>
+                </div>
+
+                <div class="card" style="margin: 2rem 0;">
+                    <h3>Phase 4: Power Automate Integration (Week 2-3)</h3>
+                    <ol>
+                        <li>Create Power Automate flow for certificate generation</li>
+                        <li>Set up trigger (List item created, form submission, or webhook)</li>
+                        <li>Configure certificate generation steps</li>
+                        <li>Set up email delivery</li>
+                        <li>Test flow with sample completion</li>
+                        <li>Handle errors and edge cases</li>
+                    </ol>
+                </div>
+
+                <div class="card" style="margin: 2rem 0;">
+                    <h3>Phase 5: Microsoft SWAY Enhancement (Week 3, Optional)</h3>
+                    <ol>
+                        <li>Create SWAY presentation with course introduction</li>
+                        <li>Embed xAPI course or link to it</li>
+                        <li>Add supplementary resources</li>
+                        <li>Customize branding</li>
+                        <li>Test on different devices</li>
+                        <li>Share SWAY link</li>
+                    </ol>
+                </div>
+
+                <div class="card" style="margin: 2rem 0;">
+                    <h3>Phase 6: Testing & Launch (Week 3-4)</h3>
+                    <ol>
+                        <li>End-to-end testing with real users</li>
+                        <li>Verify certificate generation and delivery</li>
+                        <li>Check Microsoft Lists data accuracy</li>
+                        <li>Test error scenarios</li>
+                        <li>Gather feedback from pilot users</li>
+                        <li>Make adjustments based on feedback</li>
+                        <li>Document process for future courses</li>
+                        <li>Launch to full audience</li>
+                    </ol>
+                </div>
+
+                <div class="card" style="margin: 2rem 0; background: #f0f7ff; border-left: 4px solid var(--primary);">
+                    <h3>Quick Start: Minimal Viable Implementation</h3>
+                    <p>
+                        If you need to get started quickly, here's a minimal setup:
+                    </p>
+                    <ol>
+                        <li>Deploy xAPI course HTML file to SharePoint</li>
+                        <li>Create simple Microsoft List with: Name, Email, Completion Date, Score</li>
+                        <li>Create basic certificate template (Word or HTML)</li>
+                        <li>Set up manual process: When someone completes, add to List, generate certificate, email it
+                        </li>
+                        <li>Plan automation for Phase 2</li>
+                    </ol>
+                    <p style="margin-top: 1rem;">
+                        This gets you started immediately while you build toward full automation.
+                    </p>
+                </div>
+            </section>
+
+            <section class="panel" id="resources">
+                <h2>Additional Resources</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <h3>Course Files</h3>
+                        <ul>
+                            <li><a href="twitter-training-xapi.html" target="_blank">Interactive xAPI Course</a></li>
+                            <li><a href="training-session.html">Training Session Plan</a></li>
+                            <li><a href="xapi-course/TWITTER_TRAINING_COMPLETE.md" target="_blank">Course
+                                    Documentation</a></li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>Microsoft 365 Resources</h3>
+                        <ul>
+                            <li><a href="https://support.microsoft.com/en-us/microsoft-lists" target="_blank">Microsoft
+                                    Lists Help</a></li>
+                            <li><a href="https://support.microsoft.com/en-us/sway" target="_blank">Microsoft SWAY
+                                    Guide</a></li>
+                            <li><a href="https://learn.microsoft.com/en-us/power-automate/" target="_blank">Power
+                                    Automate Documentation</a></li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>xAPI Resources</h3>
+                        <ul>
+                            <li><a href="https://xapi.com/" target="_blank">xAPI Specification</a></li>
+                            <li><a href="https://adlnet.gov/projects/xapi/" target="_blank">ADL xAPI Resources</a></li>
+                            <li><a href="https://github.com/adlnet/xAPI-Spec" target="_blank">xAPI GitHub Repository</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <button id="back-to-top" class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+        aria-label="Back to top">
+        ↑
+    </button>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="https://www.dofe.org/news/" target="_blank">The Latest</a></li>
+                    <li><a href="https://www.dofe.org/work-for-us/" target="_blank">Work for us</a></li>
+                    <li><a href="organisation.html">About the Organisation</a></li>
+                    <li><a href="role.html">The Role</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Interview Prep</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="organisation.html">Organisation</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="role.html">Role</a></li>
+                    <li><a href="prep.html">Prep Plan</a></li>
+                    <li><a href="documentation.html">Documentation</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="training.html">Training</a></li>
+                    <li><a href="xapi-course-integration.html">xAPI Course</a></li>
+                    <li><a href="second-interview.html">Second Interview</a></li>
+                    <li><a href="training-session.html">Training Session</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>My Current Work Projects</h3>
+                <ul>
+                    <li><a href="https://simple-cv-builder.com/" target="_blank">Simple CV Builder</a></li>
+                    <li><a href="https://simple-job-tracker.com/landing.php" target="_blank">Simple Job Tracker</a></li>
+                    <li><a href="https://simple-data-cleaner.com/" target="_blank">Simple Data Cleaner</a></li>
+                    <li><a href="https://wellis321.github.io/org-playbook/" target="_blank">Organisation Playbook</a>
+                    </li>
+                    <li><a href="https://wellis321.github.io/mcp-protocol-website/" target="_blank">MCP Protocol</a>
+                    </li>
+                    <li><a href="https://wellis321.github.io/national-age/" target="_blank">National Age
+                            Verification</a></li>
+                    <li><a href="https://policy-app-khaki.vercel.app/" target="_blank">Policy Management System</a></li>
+                    <li><a href="https://lavenderblush-hummingbird-585670.hostingersite.com/" target="_blank">Behaviour
+                            Observation &amp; Analysis Management System</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 William Ellis | Interview Prep Site</p>
+        </div>
+    </footer>
+
+    <script>
+        // Show/hide back to top button based on scroll position
+        window.addEventListener('scroll', function () {
+            const backToTopButton = document.getElementById('back-to-top');
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        const navOverlay = document.querySelector('.nav-overlay');
+
+        if (menuToggle) {
+            menuToggle.addEventListener('click', function () {
+                const isActive = navLinks.classList.toggle('active');
+                menuToggle.classList.toggle('active');
+                menuToggle.setAttribute('aria-expanded', isActive);
+                if (navOverlay) {
+                    navOverlay.classList.toggle('active');
+                }
+            });
+        }
+
+        // Close menu when clicking overlay
+        if (navOverlay) {
+            navOverlay.addEventListener('click', function () {
+                navLinks.classList.remove('active');
+                menuToggle.classList.remove('active');
+                menuToggle.setAttribute('aria-expanded', 'false');
+                navOverlay.classList.remove('active');
+            });
+        }
+
+        // Nav group toggle
+        const navGroups = document.querySelectorAll('.nav-group');
+        navGroups.forEach(group => {
+            const toggle = group.querySelector('.nav-group-toggle');
+            if (toggle) {
+                toggle.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const isActive = group.classList.toggle('active');
+                    toggle.setAttribute('aria-expanded', isActive);
+                    // Close other groups
+                    navGroups.forEach(otherGroup => {
+                        if (otherGroup !== group) {
+                            otherGroup.classList.remove('active');
+                            const otherToggle = otherGroup.querySelector('.nav-group-toggle');
+                            if (otherToggle) {
+                                otherToggle.setAttribute('aria-expanded', 'false');
+                            }
+                        }
+                    });
+                });
+            }
+        });
+
+        // Close menu when clicking a nav link (mobile)
+        const navLinkElements = document.querySelectorAll('.nav-link, .nav-group-link');
+        navLinkElements.forEach(link => {
+            link.addEventListener('click', function () {
+                if (window.innerWidth <= 768) {
+                    navLinks.classList.remove('active');
+                    menuToggle.classList.remove('active');
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                    if (navOverlay) {
+                        navOverlay.classList.remove('active');
+                    }
+                }
+            });
+        });
+
+        // Set active state for nav group links
+        const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+        navGroups.forEach(group => {
+            const links = group.querySelectorAll('.nav-group-link');
+            links.forEach(link => {
+                const linkPath = link.getAttribute('href');
+                if (linkPath === currentPath || (currentPath === '' && linkPath === 'index.html')) {
+                    link.classList.add('active');
+                    group.classList.add('active');
+                    const toggle = group.querySelector('.nav-group-toggle');
+                    if (toggle) {
+                        toggle.classList.add('active');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
