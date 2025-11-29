@@ -232,7 +232,11 @@
             border-left: 3px solid #8400c6;
             padding: 20px;
             margin: 20px 0;
-            border-radius: 4px;
+            border-radius: 0;
+        }
+
+        /* Only apply flexbox when step has a step-number */
+        .step:has(.step-number) {
             display: flex;
             gap: 15px;
             align-items: flex-start;
@@ -254,9 +258,17 @@
             flex-shrink: 0;
         }
 
-        .step > div {
+        /* Content wrapper - all content flows naturally */
+        .step:has(.step-number) > div {
             flex: 1;
             min-width: 0;
+        }
+
+        /* Ensure tip boxes inside steps don't get extra padding */
+        .step .tip {
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 15px;
         }
 
         .tip {
@@ -264,7 +276,7 @@
             border-left: 3px solid #ffc107;
             padding: 15px 15px 15px 3.5rem;
             margin: 20px 0;
-            border-radius: 4px;
+            border-radius: 0;
             position: relative;
         }
 
@@ -285,7 +297,7 @@
             border-left: 3px solid #dc3545;
             padding: 15px;
             margin: 20px 0;
-            border-radius: 4px;
+            border-radius: 0;
             position: relative;
             padding-left: 3.5rem;
         }
@@ -582,17 +594,23 @@
                 <h3>Think of it Like This:</h3>
                 <div class="step">
                     <span class="step-number">1</span>
-                    <strong>Your Twitter account is like your personal mailbox</strong> - it contains your tweets, messages, and follows
+                    <div>
+                        <strong>Your Twitter account is like your personal mailbox</strong> - it contains your tweets, messages, and follows
+                    </div>
                 </div>
 
                 <div class="step">
                     <span class="step-number">2</span>
-                    <strong>Logging in is like using your key to open it</strong> - it proves you're the owner
+                    <div>
+                        <strong>Logging in is like using your key to open it</strong> - it proves you're the owner
+                    </div>
                 </div>
 
                 <div class="step">
                     <span class="step-number">3</span>
-                    <strong>Your password is your unique key</strong> - only you should have it!
+                    <div>
+                        <strong>Your password is your unique key</strong> - only you should have it!
+                    </div>
                 </div>
 
                 <h3>What You Need to Log In:</h3>
@@ -923,7 +941,7 @@
                     </label>
                     <label class="quiz-option">
                         <input type="radio" name="q1" value="b">
-                        Username/email/phone and password
+                        One identifier (username OR email OR phone) and your password
                     </label>
                     <label class="quiz-option">
                         <input type="radio" name="q1" value="c">
