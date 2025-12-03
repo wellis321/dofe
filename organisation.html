@@ -43,7 +43,6 @@
                     <button class="nav-group-toggle" aria-expanded="false">Interview Phase</button>
                     <div class="nav-group-menu">
                         <a href="second-interview.html" class="nav-group-link">Second Interview</a>
-                        <a href="training-session.html" class="nav-group-link">Training Session</a>
                         <a href="xapi-course-integration.html" class="nav-group-link">xAPI Course</a>
                         <a href="post-session-questionnaire.html" class="nav-group-link">Post-Session Questionnaire</a>
                     </div>
@@ -894,7 +893,7 @@
         const navOverlay = document.querySelector('.nav-overlay');
 
         if (menuToggle) {
-            menuToggle.addEventListener('click', function() {
+            menuToggle.addEventListener('click', function () {
                 const isActive = navLinks.classList.toggle('active');
                 menuToggle.classList.toggle('active');
                 menuToggle.setAttribute('aria-expanded', isActive);
@@ -906,7 +905,7 @@
 
         // Close menu when clicking overlay
         if (navOverlay) {
-            navOverlay.addEventListener('click', function() {
+            navOverlay.addEventListener('click', function () {
                 navLinks.classList.remove('active');
                 menuToggle.classList.remove('active');
                 menuToggle.setAttribute('aria-expanded', 'false');
@@ -919,7 +918,7 @@
         navGroups.forEach(group => {
             const toggle = group.querySelector('.nav-group-toggle');
             if (toggle) {
-                toggle.addEventListener('click', function(e) {
+                toggle.addEventListener('click', function (e) {
                     e.preventDefault();
                     const isActive = group.classList.toggle('active');
                     toggle.setAttribute('aria-expanded', isActive);
@@ -940,7 +939,7 @@
         // Close menu when clicking a nav link
         const navLinkElements = document.querySelectorAll('.nav-link, .nav-group-link');
         navLinkElements.forEach(link => {
-            link.addEventListener('click', function() {
+            link.addEventListener('click', function () {
                 // Close mobile menu
                 if (window.innerWidth <= 768) {
                     navLinks.classList.remove('active');
@@ -963,7 +962,7 @@
         });
 
         // Close nav group menus when clicking outside
-        document.addEventListener('click', function(e) {
+        document.addEventListener('click', function (e) {
             const isClickInsideNav = e.target.closest('.nav-group');
             const isClickOnToggle = e.target.closest('.nav-group-toggle');
 
